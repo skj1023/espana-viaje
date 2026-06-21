@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇪🇸 康杰 & 媳妇 · 西班牙之旅</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+  :root {
+    --bg: #faf8f5;
+    --surface: #ffffff;
+    --text: #1d1d1f;
+    --text-secondary: #6e6e73;
+    --accent: #c73b2b;
+    --accent-light: #e85d3a;
+    --gold: #d4a853;
+    --gold-light: #efe3c9;
+    --border: #e5e5e7;
+    --tag-bg: #f5f0eb;
+    --shadow: 0 2px 12px rgba(0,0,0,0.06);
+    --radius: 16px;
+    --max-w: 900px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ===== Hero ===== */
+  .hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 70%, #c73b2b 100%);
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(212,168,83,0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 30%, rgba(199,59,43,0.1) 0%, transparent 50%);
+  }
+
+  .hero-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.06;
+    background-image:
+      repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(255,255,255,0.1) 40px, rgba(255,255,255,0.1) 41px),
+      radial-gradient(circle at 20% 50%, #d4a853 0, transparent 50%);
+  }
+
+  .hero-content { position: relative; z-index: 1; padding: 2rem; }
+
+  .hero-flag { font-size: 4rem; margin-bottom: 1rem; display: block; }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero h1 .accent { color: var(--gold); }
+
+  .hero p {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-badge-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 1rem;
+    border-radius: 100px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 400;
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,0.5);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
+  }
+
+  /* ===== Nav ===== */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250,248,245,0.92);
+    backdrop-filter: blur(16px) saturate(180%);
+    border-bottom: 1px solid var(--border);
+    padding: 0 1.5rem;
+  }
+
+  .nav-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.75rem 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .nav-inner::-webkit-scrollbar { display: none; }
+
+  .nav a {
+    flex-shrink: 0;
+    padding: 0.4rem 0.9rem;
+    border-radius: 8px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+
+  .nav a:hover,
+  .nav a.active {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  /* ===== Container ===== */
+  .container {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
+  .section-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.01em;
+  }
+
+  .section-desc {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    max-width: 640px;
+  }
+
+  /* ===== Cards ===== */
+  .card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 1.8rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    margin-bottom: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .card h3 .emoji { font-size: 1.3rem; }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+
+  /* ===== Timeline ===== */
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    bottom: 4px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent), var(--gold), var(--accent));
+    border-radius: 2px;
+  }
+
+  .timeline-item {
+    position: relative;
+    padding: 0 0 2rem 1.5rem;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1.9rem;
+    top: 0.4rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 3px solid var(--bg);
+    box-shadow: 0 0 0 2px var(--accent);
+  }
+
+  .timeline-item:last-child { padding-bottom: 0; }
+
+  .timeline-item .date {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.2rem;
+  }
+
+  .timeline-item h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .timeline-item p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+
+  /* ===== Table ===== */
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+
+  thead {
+    background: #f5f0eb;
+  }
+
+  th {
+    text-align: left;
+    padding: 0.85rem 1rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 0.75rem 1rem;
+    border-top: 1px solid var(--border);
+  }
+
+  tr:hover td { background: #faf8f5; }
+
+  /* ===== Day Cards ===== */
+  .day-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    margin-bottom: 1rem;
+    transition: all 0.2s;
+  }
+
+  .day-card:hover { box-shadow: var(--shadow); }
+
+  .day-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .day-header h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .day-header .day-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .day-header .toggle-icon {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+  }
+
+  .day-body {
+    padding: 0 1.5rem 1.5rem;
+    display: none;
+  }
+
+  .day-card.open .day-body { display: block; }
+  .day-card.open .toggle-icon { transform: rotate(180deg); }
+
+  .day-body ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .day-body li {
+    padding: 0.4rem 0;
+    font-size: 0.92rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    color: var(--text-secondary);
+  }
+
+  .day-body li .time { color: var(--accent); font-weight: 500; white-space: nowrap; min-width: 4.2rem; }
+
+  .day-tag {
+    display: inline-block;
+    padding: 0.15rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background: var(--tag-bg);
+    color: var(--text-secondary);
+    margin-right: 0.3rem;
+  }
+
+  .day-tag.meal { background: #fff0e0; color: #b85a1a; }
+  .day-tag.sight { background: #e0f0ff; color: #1a6ab8; }
+  .day-tag.transport { background: #e8f5e9; color: #2e7d32; }
+  .day-tag.tip { background: #fce4ec; color: #c62828; }
+
+  /* ===== Tags ===== */
+  .tag-list { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.5rem 0; }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.65rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background: var(--tag-bg);
+    color: var(--text-secondary);
+  }
+
+  .tag.red { background: #fde8e6; color: var(--accent); }
+  .tag.gold { background: var(--gold-light); color: #8b6914; }
+  .tag.green { background: #e8f5e9; color: #2e7d32; }
+  .tag.blue { background: #e0f0ff; color: #1a6ab8; }
+
+  /* ===== Quote ===== */
+  .quote {
+    background: linear-gradient(135deg, var(--gold-light) 0%, #faf8f5 100%);
+    border-left: 4px solid var(--gold);
+    padding: 1.5rem 2rem;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+
+  /* ===== Checklist ===== */
+  .checklist { list-style: none; padding: 0; }
+
+  .checklist li {
+    padding: 0.5rem 0;
+    font-size: 0.92rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    color: var(--text-secondary);
+  }
+
+  .checklist li .check { color: var(--accent); font-weight: 700; }
+
+  /* ===== Budget Table ===== */
+  .budget-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .budget-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.2rem;
+    text-align: center;
+  }
+
+  .budget-item .label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.3rem;
+  }
+
+  .budget-item .amount {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  .budget-item .note {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 0.2rem;
+  }
+
+  .budget-total {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    color: #fff;
+    border: none;
+  }
+
+  .budget-total .label { color: rgba(255,255,255,0.7); }
+  .budget-total .amount { color: #fff; }
+  .budget-total .note { color: rgba(255,255,255,0.6); }
+
+  /* ===== Accordion ===== */
+  .accordion { margin: 1rem 0; }
+
+  .accordion-item {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+  }
+
+  .accordion-header {
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 0.95rem;
+    user-select: none;
+    transition: background 0.2s;
+  }
+
+  .accordion-header:hover { background: #faf8f5; }
+
+  .accordion-header .arrow {
+    transition: transform 0.3s;
+    color: var(--text-secondary);
+  }
+
+  .accordion-item.open .accordion-header .arrow { transform: rotate(180deg); }
+
+  .accordion-body {
+    padding: 0 1.2rem 1.2rem;
+    display: none;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .accordion-item.open .accordion-body { display: block; }
+
+  /* ===== Footer ===== */
+  footer {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+  }
+
+  footer .hearts { color: var(--accent); }
+
+  /* ===== Progress ===== */
+  .progress-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+  }
+
+  .progress-step {
+    flex: 1;
+    min-width: 120px;
+    padding: 1rem;
+    background: var(--surface);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .progress-step .step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--gold-light);
+    color: #8b6914;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-step h5 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+
+  .progress-step p {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+  }
+
+  /* ===== Map Placeholder ===== */
+  .route-svg {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 1.5rem auto;
+    border-radius: var(--radius);
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 2.4rem; }
+    .card { padding: 1.2rem; }
+    .day-header { padding: 1rem 1.2rem; }
+    .day-body { padding: 0 1.2rem 1.2rem; }
+    .nav { padding: 0 0.75rem; }
+    .nav a { font-size: 0.78rem; padding: 0.35rem 0.7rem; }
+  }
+
+  /* ===== Print ===== */
+  @media print {
+    .nav { display: none; }
+    .hero { height: auto; min-height: auto; padding: 4rem 0; }
+    .hero-scroll { display: none; }
+    .day-body { display: block !important; }
+    .day-card .toggle-icon { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ======== HERO ======== -->
+<section class="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <span class="hero-flag">🇪🇸</span>
+    <h1>康杰 &<br><span class="accent">España</span></h1>
+    <p>两个人的西班牙之梦 · 2026 国庆</p>
+    <div class="hero-badge-group">
+      <span class="hero-badge">✈️ 上海出发</span>
+      <span class="hero-badge">🏛️ 圣家堂完工之年</span>
+      <span class="hero-badge">📅 7天浪漫之旅</span>
+      <span class="hero-badge">💃 弗拉门戈之夜</span>
+    </div>
+  </div>
+  <div class="hero-scroll">向下浏览</div>
+</section>
+
+<!-- ======== NAV ======== -->
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="#visa">📋 签证攻略</a>
+    <a href="#itinerary">🗺️ 行程规划</a>
+    <a href="#food">🍽️ 美食地图</a>
+    <a href="#budget">💰 预算参考</a>
+    <a href="#info">🔌 实用信息</a>
+    <a href="#checklist">✅ 行前清单</a>
+  </div>
+</nav>
+
+<!-- ======== VISA ======== -->
+<section id="visa">
+  <div class="container">
+    <span class="section-label">📍 上海领区</span>
+    <h2>📋 西班牙申根签证攻略</h2>
+    <p class="section-desc">十一出行，建议 7 月初开始操作，预留充足时间。</p>
+
+    <div class="progress-steps">
+      <div class="progress-step">
+        <div class="step-num">1</div>
+        <h5>6 月下旬</h5>
+        <p>准备材料</p>
+      </div>
+      <div class="progress-step">
+        <div class="step-num">2</div>
+        <h5>7 月上旬</h5>
+        <p>在线预约递签</p>
+      </div>
+      <div class="progress-step">
+        <div class="step-num">3</div>
+        <h5>7 月中下旬</h5>
+        <p>递签 + 录指纹</p>
+      </div>
+      <div class="progress-step">
+        <div class="step-num">4</div>
+        <h5>8 月上旬</h5>
+        <p>等待出签</p>
+      </div>
+      <div class="progress-step">
+        <div class="step-num">5</div>
+        <h5>9 月</h5>
+        <p>订机票酒店出发</p>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="date">签证类型</div>
+        <h4>短期申根签证（C类）· 旅游</h4>
+        <p>申根签证可在 27 个申根国自由旅行。西班牙签发后，从西班牙入境，可顺访法国、意大利、葡萄牙等邻国。</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">签证中心</div>
+        <h4>BLS 西班牙签证中心 · 上海</h4>
+        <p>📍 上海市浦东新区世纪大道1500号东方大厦6层<br>🕐 周一至周五 8:00–15:00（需预约）</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">费用参考</div>
+        <h4>两人合计约 ¥1,600–2,000</h4>
+        <p>签证费 €90/人（约¥700）+ BLS 服务费约 ¥120/人 + 快递费 ¥60/本（可选）</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">审理时间</div>
+        <h4>官方 15 个自然日，高峰期可能延长</h4>
+        <p>建议 7 月中下旬递签，预留 20–30 天等待期，8 月下旬前出签即可安心订票。</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <h3><span class="emoji">📋</span> 材料清单 · 在职人员 + 配偶同行</h3>
+      <div class="table-wrap" style="margin-top: 1rem;">
+        <table>
+          <thead>
+            <tr><th style="width:36px">#</th><th>材料</th><th>要求</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td><strong>签证申请表</strong></td><td>在线填写并打印，A4单面，签名</td></tr>
+            <tr><td>2</td><td><strong>护照原件 + 复印件</strong></td><td>有效期 > 回国后3个月，至少2页空白页，有旧护照一起带</td></tr>
+            <tr><td>3</td><td><strong>白底彩照 2 张</strong></td><td>35mm × 45mm，6个月内，露耳不戴眼镜</td></tr>
+            <tr><td>4</td><td><strong>身份证复印件</strong></td><td>正反面</td></tr>
+            <tr><td>5</td><td><strong>户口本原件 + 全本复印件</strong></td><td>所有信息页（含空白页）</td></tr>
+            <tr><td>6</td><td><strong>旅行医疗保险</strong></td><td>保额 ≥ €30,000，覆盖全程申根区</td></tr>
+            <tr><td>7</td><td><strong>往返机票预订</strong></td><td>可先订可退款的</td></tr>
+            <tr><td>8</td><td><strong>酒店预订证明</strong></td><td>覆盖全程住宿，Booking 可订免费取消</td></tr>
+            <tr><td>9</td><td><strong>详细行程单</strong></td><td>每日安排：日期·城市·景点·住宿·交通</td></tr>
+            <tr><td>10</td><td><strong>结婚证复印件</strong></td><td>配偶同行时提供</td></tr>
+            <tr><td style="border-top:2px solid var(--border);">11</td><td style="border-top:2px solid var(--border);"><strong>在职证明（英文）</strong></td><td style="border-top:2px solid var(--border);">公司抬头纸 + 盖章 + 签字：职位·收入·入职时间·准假日期</td></tr>
+            <tr><td>12</td><td><strong>营业执照副本复印件</strong></td><td>加盖公章</td></tr>
+            <tr><td>13</td><td><strong>近 3–6 个月银行流水</strong></td><td>工资卡最佳，余额建议 ≥ 5 万/人</td></tr>
+            <tr><td>14</td><td><strong>房产证/车辆登记证</strong></td><td>可选，有助增信</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="quote" style="margin: 1rem 0 0;">
+        💡 配偶随行无需工作证明，提供结婚证 + 配偶（你）的在职证明/流水 + 出资声明信即可。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== ITINERARY ======== -->
+<section id="itinerary" style="background: #f5f0eb;">
+  <div class="container">
+    <span class="section-label">🗓️ 7 天 6 晚</span>
+    <h2>🗺️ 巴塞罗那 → 马德里</h2>
+    <p class="section-desc">圣家堂完工之年，感受高迪的梦幻世界；再去马德里，体验西班牙双城记。</p>
+
+    <!-- Route diagram -->
+    <div class="card" style="text-align:center;">
+      <h3 style="justify-content:center;">🚄 行程路线</h3>
+      <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1rem;">
+        上海 ✈️ 巴塞罗那（3晚） 🚄 马德里（3晚） ✈️ 上海
+      </p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:0.5rem;flex-wrap:wrap;font-size:1.5rem;">
+        <span style="background:var(--accent);color:#fff;padding:0.3rem 1rem;border-radius:8px;font-size:0.9rem;">上海</span>
+        <span>✈️ 13h</span>
+        <span style="background:var(--gold);color:#fff;padding:0.3rem 1rem;border-radius:8px;font-size:0.9rem;">巴塞罗那</span>
+        <span>🚄 2.5h</span>
+        <span style="background:var(--gold);color:#fff;padding:0.3rem 1rem;border-radius:8px;font-size:0.9rem;">马德里</span>
+        <span>✈️ 12h</span>
+        <span style="background:var(--accent);color:#fff;padding:0.3rem 1rem;border-radius:8px;font-size:0.9rem;">上海</span>
+      </div>
+    </div>
+
+    <!-- Day 1 -->
+    <div class="day-card open">
+      <div class="day-header" onclick="this.parentElement.classList.toggle('open')">
+        <h3><span class="day-num">1</span> 抵达巴塞罗那 · 初见高迪</h3>
+        <span class="toggle-icon">▾</span>
+      </div>
+      <div class="day-body">
+        <ul>
+          <li><span class="time">✈️ 上午</span>抵达巴塞罗那机场（BCN），乘机场大巴到市区</li>
+          <li><span class="time">🏨 中午</span>入住酒店（推荐 Eixample 扩展区，靠近高迪建筑群）</li>
+          <li><span class="time">🍽️ 下午</span><span class="day-tag meal">午餐</span> Cervecería Catalana 地道 Tapas</li>
+          <li><span class="time">🚶 下午</span>兰布拉大道 → 博盖利亚市场（水果·火腿·海鲜）</li>
+          <li><span class="time">🌇 傍晚</span>哥特区迷宫小巷 → 巴塞罗那主教堂</li>
+          <li><span class="time">🍷 晚上</span><span class="day-tag meal">晚餐</span> 港口区 Can Majó 海鲜晚餐，地中海晚风 🥂</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="day-card open">
+      <div class="day-header" onclick="this.parentElement.classList.toggle('open')">
+        <h3><span class="day-num">2</span> 圣家堂 · 高迪建筑日</h3>
+        <span class="toggle-icon">▾</span>
+      </div>
+      <div class="day-body">
+        <ul>
+          <li><span class="time">⛪ 上午</span><span class="day-tag sight">重点</span> <strong>圣家堂</strong>（建议预订 9:00 最早场，人少光影最美）</li>
+          <li><span class="time">🏛️ 中午</span>圣家堂对面 High 咖啡厅（可拍到全景倒影）</li>
+          <li><span class="time">🏠 下午</span><span class="day-tag sight">巴特罗之家</span> 高迪的海洋幻想</li>
+          <li><span class="time">🏠 下午</span><span class="day-tag sight">米拉之家</span> 屋顶烟囱群 + 城市全景</li>
+          <li><span class="time">🌳 傍晚</span><span class="day-tag sight">古埃尔公园</span> 彩色马赛克长椅看日落</li>
+          <li><span class="time">🍽️ 晚上</span><span class="day-tag meal">晚餐</span> 加泰罗尼亚传统餐厅 El Nacional</li>
+        </ul>
+        <div class="quote" style="margin-top:0.8rem;">
+          🏛️ 2026 年是圣家堂开工 144 周年、高迪逝世百年——今年终于主体完工！这是历史上第一次看到完整的圣家堂，意义非凡。
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 3 -->
+    <div class="day-card open">
+      <div class="day-header" onclick="this.parentElement.classList.toggle('open')">
+        <h3><span class="day-num">3</span> 海滩 · 艺术 · 浪漫之夜</h3>
+        <span class="toggle-icon">▾</span>
+      </div>
+      <div class="day-body">
+        <ul>
+          <li><span class="time">🏖️ 上午</span>巴塞罗那海滩 Barceloneta 散步 + 海边早午餐</li>
+          <li><span class="time">🎨 下午</span>加泰罗尼亚国家艺术博物馆（MNAC）</li>
+          <li><span class="time">⛰️ 傍晚</span>蒙特惠奇山城堡俯瞰港口全景</li>
+          <li><span class="time">🎭 晚上</span><span class="day-tag tip">可选</span> 加泰罗尼亚音乐宫看一场弗拉门戈或音乐会</li>
+          <li><span class="time">🍷 晚上</span><span class="day-tag meal">晚餐</span> 哥特区隐秘小酒馆，吃正宗海鲜饭 Paella</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Day 4: Travel -->
+    <div class="day-card open">
+      <div class="day-header" onclick="this.parentElement.classList.toggle('open')">
+        <h3><span class="day-num">4</span> 巴塞罗那 → 马德里</h3>
+        <span class="toggle-icon">▾</span>
+      </div>
+      <div class="day-body">
+        <ul>
+          <li><span class="time">☀️ 上午</span>巴塞罗那最后半天：圣卡特琳娜市场吃 Fresc Co 或逛逛 El Born 区</li>
+          <li><span class="time">🚄 中午</span><span class="day-tag transport">高铁 AVE</span> 巴塞罗那 Sants 站 → 马德里 Atocha 站（约 2.5h）</li>
+          <li><span class="time">🏨 下午</span>抵达马德里，入住酒店（推荐 Sol 或 Gran Vía 附近）</li>
+          <li><span class="time">🚶 下午</span>太阳门广场（零公里标志）→ 马约尔广场</li>
+          <li><span class="time">🍽️ 晚上</span><span class="day-tag meal">晚餐</span><span class="day-tag tip">必去</span> <strong>圣米格尔市场</strong> Mercado de San Miguel 吃 Tapas 逛吃模式</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Day 5 -->
+    <div class="day-card open">
+      <div class="day-header" onclick="this.parentElement.classList.toggle('open')">
+        <h3><span class="day-num">5</span> 马德里王宫 · 艺术之旅</h3>
+        <span class="toggle-icon">▾</span>
+      </div>
+      <div class="day-body">
+        <ul>
+          <li><span class="time">🏰 上午</span><strong>马德里王宫</strong>（欧洲第三大王宫，建议 10:00 前到）</li>
+          <li><span class="time">🌿 中午</span>萨巴蒂尼花园散步拍照，王宫外景绝佳机位</li>
+          <li><span class="time">🎨 下午</span><strong>普拉多博物馆</strong>（世界顶级美术馆，看戈雅、委拉斯开兹）</li>
+          <li><span class="time">🌇 傍晚</span><strong>德波神庙</strong> Templo de Debod —— 马德里最美日落 🌅</li>
+          <li><span class="time">🍽️ 晚上</span><span class="day-tag meal">晚餐</span> Sobrino de Botín（1725年开业，吉尼斯最老餐厅，烤乳猪必点）</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Day 6 -->
+    <div class="day-card open">
+      <div class="day-header" onclick="this.parentElement.classList.toggle('open')">
+        <h3><span class="day-num">6</span> 丽池公园 · 悠闲时光</h3>
+        <span class="toggle-icon">▾</span>
+      </div>
+      <div class="day-body">
+        <ul>
+          <li><span class="time">🚣 上午</span><strong>丽池公园</strong> Retiro Park 划船 + 水晶宫 Palacio de Cristal</li>
+          <li><span class="time">🛍️ 下午</span>格兰大道 Gran Vía 逛街购物</li>
+          <li><span class="time">🍩 下午</span>Chocolatería San Ginés 吃吉拿果蘸热巧克力 🍫</li>
+          <li><span class="time">🎭 晚上</span><span class="day-tag tip">可选</span> 看一场西班牙弗拉门戈表演（推荐 Corral de la Morería）</li>
+          <li><span class="time">🍽️ 晚上</span><span class="day-tag meal">晚餐</span> 最后一晚的浪漫晚宴，Gran Vía 屋顶餐厅看夜景</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Day 7 -->
+    <div class="day-card open">
+      <div class="day-header" onclick="this.parentElement.classList.toggle('open')">
+        <h3><span class="day-num">7</span> 返程 · Hasta Luego</h3>
+        <span class="toggle-icon">▾</span>
+      </div>
+      <div class="day-body">
+        <ul>
+          <li><span class="time">☀️ 上午</span>最后采购纪念品：火腿、橄榄油、藏红花</li>
+          <li><span class="time">✈️ 下午</span>马德里机场（MAD）→ 上海</li>
+          <li><span class="time">🌙 晚上</span>飞行中回味西班牙的每一刻 🇪🇸❤️</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 0.5rem;">
+      <h3><span class="emoji">💡</span> 关于圣家堂门票</h3>
+      <p style="color:var(--text-secondary);font-size:0.92rem;">
+        圣家堂是全世界最热门的景点之一，<strong>必须提前 1–2 个月在线购票</strong>。建议选 <strong>9:00 最早入场 + 登塔 (Passion Tower)</strong> 的组合票，光线最佳且人少。官网：<code>sagradafamilia.org</code>
+      </p>
+      <p style="color:var(--text-secondary);font-size:0.92rem;margin-top:0.5rem;">
+        另外推荐预订 <strong>巴特罗之家夜场</strong>（蓝色 LED 灯光秀），以及 <strong>古埃尔公园</strong> 门票也要提前购买，每天限流。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ======== FOOD ======== -->
+<section id="food">
+  <div class="container">
+    <span class="section-label">🍽️ 吃货指南</span>
+    <h2>两个人的西班牙味蕾之旅</h2>
+    <p class="section-desc">从 Tapas 到海鲜饭，从吉拿果到桑格利亚——每一口都是西班牙的热情。</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3><span class="emoji">🥘</span> 海鲜饭 Paella</h3>
+        <p style="color:var(--text-secondary);font-size:0.9rem;">发源地瓦伦西亚最正宗，但巴塞罗那港口区也能找到一流版本。两人分享一锅，配白葡萄酒 🥂</p>
+      </div>
+      <div class="card">
+        <h3><span class="emoji">🍖</span> 伊比利亚火腿</h3>
+        <p style="color:var(--text-secondary);font-size:0.9rem;">Jamón Ibérico de Bellota——黑标橡果火腿，入口即化。马德里 Museo del Jamón 是性价比之选。</p>
+      </div>
+      <div class="card">
+        <h3><span class="emoji">🍩</span> 吉拿果 Churros</h3>
+        <p style="color:var(--text-secondary);font-size:0.9rem;">马德里 San Ginés —— 1884 年开业的老店，24 小时营业。热油炸面团蘸浓巧克力，甜蜜到心底。</p>
+      </div>
+      <div class="card">
+        <h3><span class="emoji">🍷</span> 桑格利亚 Sangría</h3>
+        <p style="color:var(--text-secondary);font-size:0.9rem;">红葡萄酒 + 水果 + 气泡水，最适合两人小酌。Catalana 区的 Cava 起泡酒也值得一试。</p>
+      </div>
+      <div class="card">
+        <h3><span class="emoji">🦐</span> Tapas 逛吃</h3>
+        <p style="color:var(--text-secondary);font-size:0.9rem;">西班牙的饮食文化——每餐换不同小店，点几份小菜配一杯酒。推荐：Patatas Bravas、Gambas al Ajillo、Croquetas</p>
+      </div>
+      <div class="card">
+        <h3><span class="emoji">🥣</span> 西班牙冷汤 Gazpacho</h3>
+        <p style="color:var(--text-secondary);font-size:0.9rem;">番茄底的冷汤，10 月初西班牙还热，喝一碗清爽开胃。配火腿和面包就是完美一餐。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== BUDGET ======== -->
+<section id="budget" style="background: #f5f0eb;">
+  <div class="container">
+    <span class="section-label">💰 花费预算</span>
+    <h2>两人 7 天 · 中等预算参考</h2>
+    <p class="section-desc">十一期间为旺季，价格上浮约 20–30%，以下按旺季估算。</p>
+
+    <div class="budget-grid">
+      <div class="budget-item">
+        <div class="label">✈️ 往返机票</div>
+        <div class="amount">¥10,000–16,000</div>
+        <div class="note">两人合计，建议提前 4 个月关注</div>
+      </div>
+      <div class="budget-item">
+        <div class="label">🏨 住宿 6 晚</div>
+        <div class="amount">¥5,000–8,000</div>
+        <div class="note">中档精品酒店/民宿含早餐</div>
+      </div>
+      <div class="budget-item">
+        <div class="label">🚄 高铁 AVE</div>
+        <div class="amount">¥800–1,200</div>
+        <div class="note">巴塞罗那 → 马德里 两人单程</div>
+      </div>
+      <div class="budget-item">
+        <div class="label">🍽️ 餐饮</div>
+        <div class="amount">¥4,000–6,000</div>
+        <div class="note">正餐 €25–40/人/餐</div>
+      </div>
+      <div class="budget-item">
+        <div class="label">🎫 景点门票</div>
+        <div class="amount">¥1,500–2,500</div>
+        <div class="note">圣家堂 €26×2 + 其它</div>
+      </div>
+      <div class="budget-item">
+        <div class="label">🚇 市内交通</div>
+        <div class="amount">¥500–800</div>
+        <div class="note">地铁10次票 + 机场大巴</div>
+      </div>
+      <div class="budget-item">
+        <div class="label">🛡️ 旅行保险</div>
+        <div class="amount">¥200–400</div>
+        <div class="note">申根保险必备</div>
+      </div>
+      <div class="budget-item">
+        <div class="label">🛍️ 购物/纪念品</div>
+        <div class="amount">¥2,000–5,000</div>
+        <div class="note">火腿/橄榄油/藏红花等</div>
+      </div>
+      <div class="budget-item budget-total">
+        <div class="label">💶 总计（两人）</div>
+        <div class="amount">约 ¥25,000–40,000</div>
+        <div class="note">不含购物，丰俭由人</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== INFO ======== -->
+<section id="info">
+  <div class="container">
+    <span class="section-label">🔌 行前必知</span>
+    <h2>实用信息速查</h2>
+    <p class="section-desc">出发前看一眼，落地不慌。</p>
+
+    <div class="accordion">
+      <div class="accordion-item open">
+        <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
+          🌤️ 10 月初天气 & 穿着
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-body">
+          <table>
+            <thead><tr><th>城市</th><th>白天</th><th>早晚</th><th>建议</th></tr></thead>
+            <tbody>
+              <tr><td>巴塞罗那</td><td>22–24°C ☀️</td><td>15–17°C</td><td>白天短袖/裙子，薄外套备用</td></tr>
+              <tr><td>马德里</td><td>20–23°C ☀️</td><td>10–13°C</td><td>昼夜温差大，需夹克/毛衣</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:0.8rem;">👗 情侣穿搭建议：宽松舒适为主，一双好走的鞋子最重要！女生可以带一条红色/碎花连衣裙，在西班牙广场拍照超好看。</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
+          🔌 出行必备
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-body">
+          <ul style="list-style:none;padding:0;">
+            <li style="padding:0.3rem 0;">🔌 欧标转换插头（两圆孔 C/F 型）</li>
+            <li style="padding:0.3rem 0;">📱 欧洲电话卡（Vodafone/Orange，飞猪可提前买）</li>
+            <li style="padding:0.3rem 0;">💳 Visa/Mastercard 信用卡（西班牙刷卡很普遍）</li>
+            <li style="padding:0.3rem 0;">💶 兑换 €200–500 现金（少量即可，大部分可刷卡）</li>
+            <li style="padding:0.3rem 0;">📄 护照 + 签证页复印件（手机存电子版）</li>
+            <li style="padding:0.3rem 0;">🧴 防晒霜（西班牙紫外线很强）</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
+          🚇 交通攻略
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>城际：高铁 AVE</strong> — 巴塞罗那→马德里 2.5h，提前在 Renfe 官网购票有折扣。</p>
+          <p style="margin-top:0.5rem;"><strong>市内交通：</strong></p>
+          <ul style="list-style:none;padding:0;margin-top:0.3rem;">
+            <li style="padding:0.2rem 0;">🚇 巴塞罗那：T-Casual 10次票 €11.35</li>
+            <li style="padding:0.2rem 0;">🚇 马德里：10次票 €12.20</li>
+            <li style="padding:0.2rem 0;">🚕 Uber/Cabify 可用，价格合理</li>
+            <li style="padding:0.2rem 0;">🚌 机场到市区：Aerobus €5–6/人</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
+          ⚠️ 安全提醒
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-body">
+          <p>西班牙整体治安良好，但巴塞罗那和马德里的小偷问题比较突出。几个要点：</p>
+          <ul style="list-style:none;padding:0;margin-top:0.5rem;">
+            <li style="padding:0.3rem 0;">📍 <strong>重点防范区域</strong>：兰布拉大道、地铁站、太阳门广场</li>
+            <li style="padding:0.3rem 0;">📵 不要拿手机边走边看地图，进店再看</li>
+            <li style="padding:0.3rem 0;">👛 护照和现金分开放，用内袋或腰包</li>
+            <li style="padding:0.3rem 0;">🎒 背包背前面，尤其在人多的地方</li>
+            <li style="padding:0.3rem 0;">🚨 紧急电话：112（欧盟统一）</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
+          🕐 其他实用贴士
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-body">
+          <ul style="list-style:none;padding:0;">
+            <li style="padding:0.3rem 0;">⏰ 时差：夏令时比北京时间慢 6 小时</li>
+            <li style="padding:0.3rem 0;">💬 语言：西班牙语，旅游区英语通用。学几句：<em>Hola</em>（你好）、<em>Gracias</em>（谢谢）、<em>Por favor</em>（请）</li>
+            <li style="padding:0.3rem 0;">🍽️ 用餐时间：午餐 13:00–15:30，晚餐 20:00–23:00（比中国晚）</li>
+            <li style="padding:0.3rem 0;">💵 小费：非强制，好服务留 5–10%</li>
+            <li style="padding:0.3rem 0;">🚾 厕所：餐厅可免费使用，街边公共厕所少，看到咖啡馆就去一下</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== CHECKLIST ======== -->
+<section id="checklist" style="background: #f5f0eb;">
+  <div class="container">
+    <span class="section-label">✅ 出发前</span>
+    <h2>行前待办清单</h2>
+    <p class="section-desc">跟着清单一步步准备，不会漏掉任何关键事项。</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3><span class="emoji">📅</span> 倒计时 4 个月</h3>
+        <ul class="checklist">
+          <li><span class="check">⬜</span> 确认护照有效期（ > 2027年4月）</li>
+          <li><span class="check">⬜</span> 准备签证材料</li>
+          <li><span class="check">⬜</span> 关注机票价格，设置降价提醒</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="emoji">📅</span> 倒计时 3 个月</h3>
+        <ul class="checklist">
+          <li><span class="check">⬜</span> 在线填写申根申请表</li>
+          <li><span class="check">⬜</span> 预约 BLS 签证中心递签时间</li>
+          <li><span class="check">⬜</span> 购买旅行医疗保险</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="emoji">📅</span> 倒计时 2 个月</h3>
+        <ul class="checklist">
+          <li><span class="check">⬜</span> 递签 + 录指纹</li>
+          <li><span class="check">⬜</span> 预订圣家堂门票</li>
+          <li><span class="check">⬜</span> 预订可退款的酒店</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="emoji">📅</span> 倒计时 1 个月</h3>
+        <ul class="checklist">
+          <li><span class="check">⬜</span> 确认签证出签，购买正式机票</li>
+          <li><span class="check">⬜</span> 预订高铁票 AVE</li>
+          <li><span class="check">⬜</span> 预订其他景点门票</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="emoji">📅</span> 倒计时 1 周</h3>
+        <ul class="checklist">
+          <li><span class="check">⬜</span> 兑换欧元</li>
+          <li><span class="check">⬜</span> 购买欧洲电话卡</li>
+          <li><span class="check">⬜</span> 整理行李（衣物+转换插头+常备药）</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="emoji">📅</span> 出发当天</h3>
+        <ul class="checklist">
+          <li><span class="check">⬜</span> 检查护照+签证+机票</li>
+          <li><span class="check">⬜</span> 手机下载离线地图</li>
+          <li><span class="check">⬜</span> 发朋友圈预告 🛫</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="quote" style="margin-top:2rem;text-align:center;">
+      🇪🇸 愿你们在西班牙留下最美好的回忆！<br>
+      <span style="font-size:0.85rem;">Buen viaje! 一路顺风！</span>
+    </div>
+  </div>
+</section>
+
+<!-- ======== FOOTER ======== -->
+<footer>
+  <p>Made with <span class="hearts">❤️</span> by 福福 & Lance · 2026 西班牙之旅</p>
+  <p style="font-size:0.75rem;margin-top:0.3rem;">上海 → 巴塞罗那 → 马德里 → 上海</p>
+</footer>
+
+<!-- ======== Scrollspy ======== -->
+<script>
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav a');
+
+  function updateActiveLink() {
+    let current = '';
+    sections.forEach(s => {
+      const top = s.offsetTop - 120;
+      if (scrollY >= top) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveLink);
+  updateActiveLink();
+</script>
+
+</body>
+</html>
