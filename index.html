@@ -537,6 +537,94 @@
 
   .accordion-item.open .accordion-body { display: block; }
 
+  /* ===== Code Block ===== */
+  .code-block {
+    background: #1d1d1f;
+    color: #f0ece4;
+    border-radius: 12px;
+    padding: 1.2rem;
+    font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    overflow-x: auto;
+    white-space: pre;
+    margin: 0.8rem 0;
+  }
+
+  /* ===== Step List ===== */
+  .step-list {
+    list-style: none;
+    padding: 0;
+    counter-reset: step-counter;
+  }
+  .step-list li {
+    counter-increment: step-counter;
+    padding: 0.5rem 0 0.5rem 2.2rem;
+    position: relative;
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+  }
+  .step-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0.45rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ===== Info Box ===== */
+  .info-box {
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    margin: 0.8rem 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .info-box.warn {
+    background: #fff8e1;
+    border-left: 4px solid #f9a825;
+    color: #6d4c00;
+  }
+  .info-box.tip {
+    background: #e8f5e9;
+    border-left: 4px solid #43a047;
+    color: #1b5e20;
+  }
+  .info-box.red {
+    background: #fde8e6;
+    border-left: 4px solid var(--accent);
+    color: #8b1a1a;
+  }
+
+  /* ===== Sub Section Title ===== */
+  .sub-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.8rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--gold-light);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .sub-title-sm {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
   /* ===== Footer ===== */
   footer {
     text-align: center;
@@ -652,92 +740,493 @@
 </nav>
 
 <!-- ======== VISA ======== -->
-<section id="visa">
+<section id="visa" style="background: #f5f0eb;">
   <div class="container">
-    <span class="section-label">📍 上海领区</span>
-    <h2>📋 西班牙申根签证攻略</h2>
-    <p class="section-desc">十一出行，建议 7 月初开始操作，预留充足时间。</p>
+    <span class="section-label">📍 上海领区 · 两人同行</span>
+    <h2>📋 西班牙申根签证完全攻略</h2>
+    <p class="section-desc">在职人员 + 配偶随行 · 2026 年十一出行 · 上海 BLS 签证中心递签</p>
 
-    <div class="progress-steps">
-      <div class="progress-step">
-        <div class="step-num">1</div>
-        <h5>6 月下旬</h5>
-        <p>准备材料</p>
+    <!-- ===== 倒排期 ===== -->
+    <div class="card">
+      <h3><span class="emoji">⏰</span> 倒排期时间线 · 从出发日倒推</h3>
+      <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1rem;">
+        2026 年 10 月 1 日出发 → 倒推每个时间节点该做什么
+      </p>
+
+      <div class="progress-steps">
+        <div class="progress-step">
+          <div class="step-num">①</div>
+          <h5>6 月下旬</h5>
+          <p>准备材料 + 办结婚公证</p>
+        </div>
+        <div class="progress-step">
+          <div class="step-num">②</div>
+          <h5>7 月上旬</h5>
+          <p>在线填表 + 抢预约号</p>
+        </div>
+        <div class="progress-step">
+          <div class="step-num">③</div>
+          <h5>7 月中下旬</h5>
+          <p>递签 + 录指纹（两人）</p>
+        </div>
+        <div class="progress-step">
+          <div class="step-num">④</div>
+          <h5>8 月中下旬</h5>
+          <p>等待出签 + 查进度</p>
+        </div>
+        <div class="progress-step">
+          <div class="step-num">⑤</div>
+          <h5>9 月初</h5>
+          <p>签到手 → 买机票订酒店</p>
+        </div>
+        <div class="progress-step">
+          <div class="step-num">🎉</div>
+          <h5>10 月 1 日</h5>
+          <p>出发！🇪🇸</p>
+        </div>
       </div>
-      <div class="progress-step">
-        <div class="step-num">2</div>
-        <h5>7 月上旬</h5>
-        <p>在线预约递签</p>
+
+      <div class="timeline" style="margin-top:0.5rem;">
+        <div class="timeline-item">
+          <div class="date">2026 年 6 月下旬 · 倒计时 3 个月</div>
+          <h4>📄 准备全部材料 + 办结婚公证</h4>
+          <p>
+            - 整理护照、身份证、户口本<br>
+            - 找公司开中英文在职证明 + 营业执照副本（盖章）<br>
+            - 打印近 3–6 个月工资卡银行流水<br>
+            - 去公证处办结婚公证 + 单认证（需 2–3 周）<br>
+            - 买旅行保险（电子保单彩色打印）<br>
+            - 订可免费取消的酒店（Booking）<br>
+            - 用穷游助手做英文行程单<br>
+            - 在携程/飞猪出未付款的机票预订单
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="date">2026 年 7 月上旬 · 倒计时 2.5 个月</div>
+          <h4>🌐 在线填申请表 + 抢预约号</h4>
+          <p>
+            - 在西班牙外交部网站填写申请表并打印<br>
+            - 每天刷 BLS 网站抢号（建议早上 8–9 点）<br>
+            - 两人预约同一天相邻时段<br>
+            - 打印预约确认单
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="date">2026 年 7 月中下旬 · 倒计时 2 个月</div>
+          <h4>🏢 递签 + 录指纹</h4>
+          <p>
+            - 本人到上海 BLS 签证中心交材料<br>
+            - 录指纹（10 指）+ 现场拍照<br>
+            - 缴费（约 ¥800/人）<br>
+            - 领回执单，用于查询进度
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="date">2026 年 8 月中下旬 · 倒计时 1 个月</div>
+          <h4>📬 等待出签</h4>
+          <p>
+            - 官方 15 个自然日，高峰期可能 20–30 天<br>
+            - 用回执单上的号码在 BLS 网站查进度<br>
+            - 保持手机畅通（可能有电话调查）<br>
+            - 出签后可选自取或快递到家（¥60/本）
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="date">2026 年 9 月 · 倒计时 2–4 周</div>
+          <h4>✅ 签到手后：订票 + 预订</h4>
+          <p>
+            - 购买正式机票（此时价格可能上涨，但有签证保障）<br>
+            - 把免费取消的酒店换成更心仪的<br>
+            - 预订圣家堂门票（提前 1–2 个月！）<br>
+            - 预订高铁 AVE 票（提前购票折扣大）<br>
+            - 买欧洲电话卡 + 换欧元现金
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="date">2026 年 10 月 1 日</div>
+          <h4>✈️ 出发！¡Vamos!</h4>
+          <p>上海 → 巴塞罗那，开启西班牙之旅 🇪🇸</p>
+        </div>
       </div>
-      <div class="progress-step">
-        <div class="step-num">3</div>
-        <h5>7 月中下旬</h5>
-        <p>递签 + 录指纹</p>
-      </div>
-      <div class="progress-step">
-        <div class="step-num">4</div>
-        <h5>8 月上旬</h5>
-        <p>等待出签</p>
-      </div>
-      <div class="progress-step">
-        <div class="step-num">5</div>
-        <h5>9 月</h5>
-        <p>订机票酒店出发</p>
+
+      <div class="info-box red" style="margin-top:1rem;">
+        <strong>⚠️ 关键提醒：</strong>广州领区预约号极其紧张（随机放号），上海领区相对好约但也建议尽早。7 月是暑期高峰，<strong>一旦拿到预约号就尽快递签</strong>，不要拖到 8 月（欧洲假期审理变慢）。
       </div>
     </div>
 
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="date">签证类型</div>
-        <h4>短期申根签证（C类）· 旅游</h4>
-        <p>申根签证可在 27 个申根国自由旅行。西班牙签发后，从西班牙入境，可顺访法国、意大利、葡萄牙等邻国。</p>
-      </div>
-      <div class="timeline-item">
-        <div class="date">签证中心</div>
-        <h4>BLS 西班牙签证中心 · 上海</h4>
-        <p>📍 上海市浦东新区世纪大道1500号东方大厦6层<br>🕐 周一至周五 8:00–15:00（需预约）</p>
-      </div>
-      <div class="timeline-item">
-        <div class="date">费用参考</div>
-        <h4>两人合计约 ¥1,600–2,000</h4>
-        <p>签证费 €90/人（约¥700）+ BLS 服务费约 ¥120/人 + 快递费 ¥60/本（可选）</p>
-      </div>
-      <div class="timeline-item">
-        <div class="date">审理时间</div>
-        <h4>官方 15 个自然日，高峰期可能延长</h4>
-        <p>建议 7 月中下旬递签，预留 20–30 天等待期，8 月下旬前出签即可安心订票。</p>
-      </div>
-    </div>
-
-    <div class="card" style="margin-top: 2rem;">
-      <h3><span class="emoji">📋</span> 材料清单 · 在职人员 + 配偶同行</h3>
-      <div class="table-wrap" style="margin-top: 1rem;">
+    <!-- ===== 基本信息 ===== -->
+    <div class="card">
+      <h3><span class="emoji">ℹ️</span> 基本信息速览</h3>
+      <div class="table-wrap">
         <table>
-          <thead>
-            <tr><th style="width:36px">#</th><th>材料</th><th>要求</th></tr>
-          </thead>
           <tbody>
-            <tr><td>1</td><td><strong>签证申请表</strong></td><td>在线填写并打印，A4单面，签名</td></tr>
-            <tr><td>2</td><td><strong>护照原件 + 复印件</strong></td><td>有效期 > 回国后3个月，至少2页空白页，有旧护照一起带</td></tr>
-            <tr><td>3</td><td><strong>白底彩照 2 张</strong></td><td>35mm × 45mm，6个月内，露耳不戴眼镜</td></tr>
-            <tr><td>4</td><td><strong>身份证复印件</strong></td><td>正反面</td></tr>
-            <tr><td>5</td><td><strong>户口本原件 + 全本复印件</strong></td><td>所有信息页（含空白页）</td></tr>
-            <tr><td>6</td><td><strong>旅行医疗保险</strong></td><td>保额 ≥ €30,000，覆盖全程申根区</td></tr>
-            <tr><td>7</td><td><strong>往返机票预订</strong></td><td>可先订可退款的</td></tr>
-            <tr><td>8</td><td><strong>酒店预订证明</strong></td><td>覆盖全程住宿，Booking 可订免费取消</td></tr>
-            <tr><td>9</td><td><strong>详细行程单</strong></td><td>每日安排：日期·城市·景点·住宿·交通</td></tr>
-            <tr><td>10</td><td><strong>结婚证复印件</strong></td><td>配偶同行时提供</td></tr>
-            <tr><td style="border-top:2px solid var(--border);">11</td><td style="border-top:2px solid var(--border);"><strong>在职证明（英文）</strong></td><td style="border-top:2px solid var(--border);">公司抬头纸 + 盖章 + 签字：职位·收入·入职时间·准假日期</td></tr>
-            <tr><td>12</td><td><strong>营业执照副本复印件</strong></td><td>加盖公章</td></tr>
-            <tr><td>13</td><td><strong>近 3–6 个月银行流水</strong></td><td>工资卡最佳，余额建议 ≥ 5 万/人</td></tr>
-            <tr><td>14</td><td><strong>房产证/车辆登记证</strong></td><td>可选，有助增信</td></tr>
+            <tr><td style="font-weight:600;width:140px;">签证类型</td><td>短期申根签证（C 类）· 旅游</td></tr>
+            <tr><td style="font-weight:600;">受理领区</td><td>上海领区（上海市、江苏省、浙江省、安徽省、江西省）</td></tr>
+            <tr><td style="font-weight:600;">签证中心</td><td>BLS 西班牙签证中心 · 上海<br>📍 黄浦区四川中路 213 号 久事商务大厦 3 层<br>🚇 地铁 2/10 号线 南京东路站 2 号口<br>🕐 周一至周五 8:00–15:00（需提前预约）</td></tr>
+            <tr><td style="font-weight:600;">费用（两人）</td><td>签证费 €90/人（约 ¥700）<br>+ BLS 服务费约 ¥120/人<br>+ 快递费 ¥60/本（可选）<br>≈ 合计 <strong>¥1,600–2,000</strong></td></tr>
+            <tr><td style="font-weight:600;">审理时间</td><td>官方 15 个自然日，高峰期 20–30 天</td></tr>
+            <tr><td style="font-weight:600;">指纹</td><td>首次申根需本人到场录 10 指指纹（59 个月内有效）</td></tr>
           </tbody>
         </table>
       </div>
-      <div class="quote" style="margin: 1rem 0 0;">
-        💡 配偶随行无需工作证明，提供结婚证 + 配偶（你）的在职证明/流水 + 出资声明信即可。
+    </div>
+
+    <!-- ===== 材料清单 ===== -->
+    <div class="card">
+      <h3><span class="emoji">📋</span> 完整材料清单（你 + 媳妇）</h3>
+      <div class="info-box tip">
+        <strong>💡 两人关系：</strong>你是在职人员，媳妇随行。媳妇无需提供工作证明和经济材料，用你的在职证明 + 银行流水 + 结婚公证书 + 出资声明信即可。
+      </div>
+
+      <div class="table-wrap" style="margin-top:1rem;">
+        <table>
+          <thead>
+            <tr><th style="width:36px">#</th><th style="width:160px;">材料</th><th>详细要求</th><th style="width:70px;">谁准备</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td><td><strong>护照</strong></td>
+              <td>有效期 > 回国日期 + 3 个月（即 2027 年 1 月后），至少 2 页空白签证页。整本复印（含空白页）。如有旧护照一并提供。</td>
+              <td>两人</td>
+            </tr>
+            <tr>
+              <td>2</td><td><strong>签证申请表</strong></td>
+              <td>在西班牙外交部官网 <code>sutramiteconsular.maec.es</code> 在线填写，用英文大写字母填写。打印后最后一页签名（中英文签名均可）。</td>
+              <td>两人</td>
+            </tr>
+            <tr>
+              <td>3</td><td><strong>白底彩照 ×2</strong></td>
+              <td>35mm × 45mm，6 个月内近照，白底、露双耳、不戴眼镜、不露齿。背面用铅笔写名字（不要用签字笔会蹭花）。</td>
+              <td>两人</td>
+            </tr>
+            <tr>
+              <td>4</td><td><strong>身份证复印件</strong></td>
+              <td>正反面复印在同一张 A4 纸上。</td>
+              <td>两人</td>
+            </tr>
+            <tr>
+              <td>5</td><td><strong>户口本复印件</strong></td>
+              <td>整本复印（所有信息页，含空白页），原件带过去核验。</td>
+              <td>两人</td>
+            </tr>
+            <tr>
+              <td>6</td><td><strong>结婚证复印件</strong></td>
+              <td>两人结婚证各复印一份。</td>
+              <td>两人</td>
+            </tr>
+            <tr>
+              <td>7</td><td><strong>结婚公证书</strong></td>
+              <td>到涉外公证处办结婚公证（中英文/中西文），再到外事办做单认证。详见下方「结婚公证办理」。</td>
+              <td>配偶材料</td>
+            </tr>
+            <tr>
+              <td>8</td><td><strong>在职证明</strong></td>
+              <td>中英文双语，公司抬头纸打印 + 公章 + 领导签字。内容：姓名、护照号、职位、月薪、入职日期、准假日期、费用承担方、保证回国。</td>
+              <td>你</td>
+            </tr>
+            <tr>
+              <td>9</td><td><strong>营业执照副本复印件</strong></td>
+              <td>加盖公司公章，注意公章要清晰可读。</td>
+              <td>你</td>
+            </tr>
+            <tr>
+              <td>10</td><td><strong>银行流水</strong></td>
+              <td>近 3–6 个月工资卡流水，银行柜台打印中英文双语版 + 盖章。余额建议 ≥ 5 万/人。两人共用一份流水也可以，余额建议 ≥ 8 万。</td>
+              <td>你为主</td>
+            </tr>
+            <tr>
+              <td>11</td><td><strong>出资声明信</strong></td>
+              <td>由你（在职方）手写或打印签名，声明承担媳妇全部旅行费用。英文或中英文双语。模板见下方。</td>
+              <td>你 → 配偶</td>
+            </tr>
+            <tr>
+              <td>12</td><td><strong>行程单</strong></td>
+              <td>英文版，每日安排：日期·城市·景点·交通·住宿。建议用穷游「行程助手」App 生成，导出为英文版。</td>
+              <td>两人</td>
+            </tr>
+            <tr>
+              <td>13</td><td><strong>机票预订</strong></td>
+              <td>携程/飞猪可出未付款的预订确认单（英文版），或订可全额退款的机票。注意姓名拼写要和护照一致。</td>
+              <td>两人</td>
+            </tr>
+            <tr>
+              <td>14</td><td><strong>酒店预订</strong></td>
+              <td>Booking 订可免费取消的酒店，覆盖全部住宿天数，预订单要显示所有入住人姓名。</td>
+              <td>两人</td>
+            </tr>
+            <tr>
+              <td>15</td><td><strong>旅行保险</strong></td>
+              <td>保额 ≥ 3 万欧元（≈ ¥24 万），覆盖全程申根区天数。支付宝搜「申根保险」可买。彩色打印保单。</td>
+              <td>两人</td>
+            </tr>
+            <tr>
+              <td>16</td><td><strong>房产证/车辆登记证</strong></td>
+              <td>非必需但加分。复印即可，原件带去核验。</td>
+              <td>你</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
+
+    <!-- ===== 模板 ===== -->
+    <div class="card">
+      <h3><span class="emoji">📝</span> 材料模板（可直接使用）</h3>
+
+      <div class="sub-title">📄 在职证明 · 英文版</div>
+      <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:0.4rem;">
+        放在公司抬头纸上打印，中英文各一份或中英文双语合并。
+      </p>
+      <div class="code-block">[Company Letterhead]
+
+Date: _______________
+
+TO WHOM IT MAY CONCERN
+
+This is to certify that Mr. [Full Name in Passport]
+(Passport No.: [Passport Number])
+is working as [Job Title] at [Company Name].
+He has been employed here since [Start Date: Month Year].
+His current monthly salary is RMB [Amount].
+
+Leave has been approved from [Departure Date: e.g. Oct 1, 2026]
+to [Return Date: e.g. Oct 8, 2026] for tourism to Spain
+and other Schengen countries.
+
+All expenses (transportation, accommodation, insurance, etc.)
+will be borne by the applicant. The company guarantees
+compliance with Schengen laws and timely return to China.
+His position will be retained during this absence.
+
+We kindly request your support in granting the visa.
+
+Sincerely,
+
+_________________________
+[HR Manager / Supervisor Name]
+[Title]
+[Company Name]
+[Company Stamp]
+[Phone Number]</div>
+
+      <div class="sub-title" style="margin-top:1.5rem;">📄 在职证明 · 中文版</div>
+      <div class="code-block">[公司抬头纸]
+
+日期：________
+
+在 职 证 明
+
+兹证明 [姓名]（护照号：[护照号码]）
+系我公司 [职位]。
+自 [入职日期] 起在我公司工作，目前月薪 [金额] 元。
+
+我司已批准其于 [出发日期] 至 [返回日期]
+期间前往西班牙及申根区旅游。
+所有费用由本人承担。我司保证其遵守当地法律并按时回国，
+职位在其休假期间保留。
+
+恳请予以签证批准。
+
+此致
+
+_________________________
+[领导/HR 签字、职位]
+[公司公章]
+[联系电话]</div>
+
+      <div class="sub-title" style="margin-top:1.5rem;">📄 出资声明信（你写给签证官，说明承担配偶费用）</div>
+      <div class="code-block">STATEMENT OF FINANCIAL SUPPORT
+
+Date: _______________
+
+To the Visa Section of the Consulate General of Spain in Shanghai,
+
+I, the undersigned, [Your Full Name] (Passport No.: [Your Passport Number]),
+hereby declare that I will bear all travel and living expenses,
+including but not limited to transportation, accommodation, meals,
+and medical insurance, for my spouse [Spouse's Full Name]
+(Passport No.: [Spouse's Passport Number])
+during her trip to Spain from [Departure Date] to [Return Date].
+
+Please kindly support her visa application.
+
+Sincerely,
+
+_________________________
+[Your Signature]
+[Full Name]
+[Phone Number]</div>
+
+      <div class="info-box tip" style="margin-top:1rem;">
+        <strong>💡 打印提示：</strong>在职证明必须用公司抬头纸（带 Logo 和地址电话）打印。如果公司没有抬头纸模板，去文印店做一个也不难，关键是公章要盖清晰。
+      </div>
+    </div>
+
+    <!-- ===== BLS 预约 + 递签流程 ===== -->
+    <div class="card">
+      <h3><span class="emoji">🌐</span> BLS 预约步骤</h3>
+      <ol class="step-list">
+        <li>打开 <a href="https://www.blsspainvisa.com/" target="_blank" style="color:var(--accent);">blsspainvisa.com</a> → 选择国家 <strong>CHINA</strong></li>
+        <li>点击顶部导航 <strong>「BOOK APPOINTMENT」</strong></li>
+        <li>选择签证中心 <strong>「Shanghai」</strong></li>
+        <li>选择签证类型 <strong>「Schengen Visa (Tourist)」</strong></li>
+        <li>填写申请人信息：姓名、护照号、手机、邮箱</li>
+        <li>选择日期和时间段（<strong>建议约最早时段 8:00–8:30，人少处理快</strong>）</li>
+        <li>确认后打印 <strong>预约确认单</strong>（递签当天带去）</li>
+      </ol>
+
+      <div class="info-box warn" style="margin-top:0.8rem;">
+        <strong>🎯 抢号技巧：</strong><br>
+        • 上海领区通常提前 2–4 周放号<br>
+        • 系统每天早上 <strong>8:00–9:00</strong> 更新最频繁<br>
+        • 两人同行可以<strong>约同一天相邻时段</strong>，材料分开递交<br>
+        • 如果刷不到号，可以试试下午 2–3 点（有人取消会释放名额）
+      </div>
+
+      <div class="sub-title">🏢 递签当天流程</div>
+      <p style="color:var(--text-secondary);font-size:0.9rem;">
+        📍 黄浦区四川中路 213 号 久事商务大厦 3 层
+      </p>
+      <ol class="step-list">
+        <li><strong>到达</strong> — 提前 15 分钟到，进门安检</li>
+        <li><strong>取号</strong> — 到 3 层 BLS 柜台出示预约单取号</li>
+        <li><strong>等待叫号</strong> — 到对应窗口递交材料</li>
+        <li><strong>交材料</strong> — 工作人员会审核并问你几个简单问题（去西班牙哪里？做什么工作？）</li>
+        <li><strong>缴费</strong> — 现金或刷卡，约 ¥800/人</li>
+        <li><strong>录指纹</strong> — 采集 10 指指纹 + 现场拍照（穿深色衣服，不要戴首饰）</li>
+        <li><strong>领回执</strong> — 保管好回执单，上面有追踪号码用于查进度</li>
+      </ol>
+      <p style="color:var(--text-secondary);font-size:0.85rem;margin-top:0.8rem;">
+        ⏱ 全程约 1–2 小时（视当天人数而定）
+      </p>
+    </div>
+
+    <!-- ===== 结婚公证 ===== -->
+    <div class="card">
+      <h3><span class="emoji">💒</span> 结婚公证 + 单认证办理</h3>
+      <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:0.8rem;">
+        配偶随行时，西班牙领事馆要求提供结婚公证书（中英文）+ 外交部单认证。建议提前 3–4 周办理。
+      </p>
+
+      <div class="card-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+        <div style="background:#faf8f5;border-radius:12px;padding:1rem;">
+          <h4 style="font-size:0.95rem;margin-bottom:0.4rem;">📍 第一步：结婚公证</h4>
+          <p style="color:var(--text-secondary);font-size:0.85rem;">
+            <strong>地点：</strong>上海市东方公证处<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（静安区凤阳路 598 号）<br>
+            或其他有涉外公证资格的公证处<br><br>
+            <strong>材料：</strong>双方身份证 + 户口本 + 结婚证原件<br><br>
+            <strong>费用：</strong>约 ¥200–300<br><br>
+            <strong>时间：</strong>5–7 个工作日（可加急 2–3 天）<br><br>
+            <strong>要求：</strong>办理中英文结婚公证书
+          </p>
+        </div>
+        <div style="background:#faf8f5;border-radius:12px;padding:1rem;">
+          <h4 style="font-size:0.95rem;margin-bottom:0.4rem;">📍 第二步：单认证</h4>
+          <p style="color:var(--text-secondary);font-size:0.85rem;">
+            <strong>地点：</strong>上海市外事办<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（静安区华山路 228 号）<br><br>
+            <strong>材料：</strong>公证书原件<br><br>
+            <strong>费用：</strong>约 ¥50–100<br><br>
+            <strong>时间：</strong>约 5 个工作日<br><br>
+            <strong>说明：</strong>单认证 = 外交部领事司对公证书上公证员签章的认证，西班牙领馆认可
+          </p>
+        </div>
+      </div>
+
+      <div class="info-box tip" style="margin-top:0.8rem;">
+        <strong>⏰ 建议时间：</strong>6 月下旬开始办结婚公证 → 拿到公证书后立刻送外事办单认证 → 约 2–3 周拿到完整的公证书。不要等递签前才办！
+      </div>
+    </div>
+
+    <!-- ===== 银行流水 ===== -->
+    <div class="card">
+      <h3><span class="emoji">🏦</span> 银行流水要求 & 避坑</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>要求</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td><strong>时间</strong></td><td>近 3–6 个月，递签前 1–2 周内去银行打印</td></tr>
+            <tr><td><strong>类型</strong></td><td>工资卡流水最佳——有稳定的工资入账记录，比储蓄卡更有说服力</td></tr>
+            <tr><td><strong>余额</strong></td><td>单人建议 ≥ 3–5 万，两人 ≥ 5–8 万。不用太多，能覆盖旅行花费即可</td></tr>
+            <tr><td><strong>打印</strong></td><td>银行柜台打印中英文双语版 + 盖银行业务章。自助机也可以但双语更保险</td></tr>
+            <tr><td><strong>⚠️ 大忌</strong></td><td>不要递签前突然大额存入！签证官会怀疑是借款。如果余额不够，提前 1–2 个月陆续存入</td></tr>
+            <tr><td><strong>辅助材料</strong></td><td>房产证、车辆登记证、定期存款单、理财证明——都是加分项，复印附上</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ===== 旅行保险 ===== -->
+    <div class="card">
+      <h3><span class="emoji">🏥</span> 旅行保险推荐</h3>
+      <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:0.8rem;">
+        申根签证强制性要求：保额 ≥ €30,000，覆盖「整个申根区 + 全程天数」。建议买比行程多 1–2 天。
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>产品</th><th>价格</th><th>推荐理由</th></tr></thead>
+          <tbody>
+            <tr><td><strong>安联「申根之王」</strong></td><td>¥100–300</td><td>出单最快，申根签专用，支付宝搜得到</td></tr>
+            <tr><td><strong>平安境外旅行险</strong></td><td>¥80–200</td><td>大品牌，理赔方便，覆盖全面</td></tr>
+            <tr><td><strong>美亚「万国游踪」</strong></td><td>¥120–350</td><td>老牌好评，保障条款详细</td></tr>
+            <tr><td><strong>京东安联申根险</strong></td><td>¥90–250</td><td>性价比高，该有的都有</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--text-secondary);font-size:0.85rem;margin-top:0.5rem;">
+        💡 支付宝直接搜索「申根保险」即可购买和打印保单。记得选<strong>彩色打印</strong>随材料递交。
+      </p>
+    </div>
+
+    <!-- ===== 费用明细 ===== -->
+    <div class="card">
+      <h3><span class="emoji">💰</span> 费用明细（两人）</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>项目</th><th>单价</th><th>两人合计</th></tr></thead>
+          <tbody>
+            <tr><td>申根签证费</td><td>€90（约 ¥700）</td><td>¥1,400</td></tr>
+            <tr><td>BLS 服务费</td><td>约 ¥120</td><td>¥240</td></tr>
+            <tr><td>快递费（可选）</td><td>¥60/本</td><td>¥120</td></tr>
+            <tr><td>结婚公证 + 单认证</td><td>—</td><td>¥250–400</td></tr>
+            <tr><td>旅行保险</td><td>¥100–300</td><td>¥200–600</td></tr>
+            <tr><td>照片（如需现场拍）</td><td>¥35</td><td>¥70</td></tr>
+            <tr><td>复印/打印</td><td>若干</td><td>¥50</td></tr>
+            <tr style="font-weight:600;"><td><strong>总计</strong></td><td></td><td><strong>¥2,300–2,900</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ===== 注意事项 ===== -->
+    <div class="card">
+      <h3><span class="emoji">⚠️</span> 拒签常见原因 & 避坑指南</h3>
+      <div class="card-grid" style="margin-top:0.5rem;">
+        <div class="info-box red" style="margin:0;">
+          <strong>🚫 拒签 TOP 5</strong><br><br>
+          1️⃣ <strong>银行流水不够</strong> — 余额低、临时大额存入、流水不规律<br><br>
+          2️⃣ <strong>行程不合理</strong> — 日程太松/太紧、城市间交通逻辑不通<br><br>
+          3️⃣ <strong>在职证明不完整</strong> — 没有公司抬头纸、缺少公章、信息不全<br><br>
+          4️⃣ <strong>保险不达标</strong> — 保额不足 €30,000、未覆盖全程<br><br>
+          5️⃣ <strong>主要目的地不是西班牙</strong> — 西班牙不是停留最长的国家
+        </div>
+        <div class="info-box tip" style="margin:0;">
+          <strong>✅ 避坑指南</strong><br><br>
+          • 银行流水提前准备，不要临时操作<br><br>
+          • 行程单要详细到每天，交通衔接要合理<br><br>
+          • 提前通知公司 HR 可能接到电话调查<br><br>
+          • 确保西班牙是全程中住宿最多的国家<br><br>
+          • 所有材料用 A4 纸，按顺序排列，不要装订<br><br>
+          • 复印件至少备 1 份（现场复印 ¥1/页 较贵）
+        </div>
+      </div>
+
+      <div class="info-box warn" style="margin-top:1rem;">
+        <strong>📞 电话调查：</strong>西班牙领馆可能会打给你的公司确认信息。提前跟 HR/领导打招呼，让他们知道你要去西班牙旅游、准假日期和你说的要一致。如果回答不上来，可能会被拒签。
+      </div>
+    </div>
+
   </div>
 </section>
 
