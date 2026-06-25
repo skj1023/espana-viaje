@@ -679,6 +679,37 @@
     color: var(--text-secondary);
   }
 
+  /* ===== Visa Form Template Gallery ===== */
+  .template-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  .template-shot {
+    background: #faf8f5;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+  }
+
+  .template-shot img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .template-shot figcaption {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border);
+  }
+
   /* ===== Map Placeholder ===== */
   .route-svg {
     display: block;
@@ -731,6 +762,7 @@
 <nav class="nav" id="navbar">
   <div class="nav-inner">
     <a href="#visa">📋 签证攻略</a>
+    <a href="#visa-form-template">📝 填表模板</a>
     <a href="#itinerary">🗺️ 行程规划</a>
     <a href="#food">🍽️ 美食地图</a>
     <a href="#budget">💰 预算参考</a>
@@ -1060,6 +1092,80 @@ _________________________
       <div class="info-box tip" style="margin-top:1rem;">
         <strong>💡 打印提示：</strong>在职证明必须用公司抬头纸（带 Logo 和地址电话）打印。如果公司没有抬头纸模板，去文印店做一个也不难，关键是公章要盖清晰。
       </div>
+    </div>
+
+    <!-- ===== 西班牙申根申请表填写模板 ===== -->
+    <div class="card" id="visa-form-template">
+      <h3><span class="emoji">📝</span> 西班牙申根签证申请表 · DIY 填写模板</h3>
+      <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1rem;">
+        根据小红书攻略「🇪🇸西班牙申根签证表DIY必备填写模板📑」整理。核心原则：<strong>全程大写英文/西班牙文填写、A4 打印、本人签名与护照签名一致</strong>。页面下方已保存原图模板，方便照着核对。
+      </p>
+
+      <div class="info-box warn" style="margin-bottom:1rem;">
+        <strong>⚠️ 一致性优先：</strong>姓名拼音、出生日期、护照号、入境/离境日期、停留天数、酒店地址、机票预订单、行程单、保险天数必须互相一致。填错不要涂改，建议直接重新打印填写。
+      </div>
+
+      <div class="card-grid">
+        <div style="background:#faf8f5;border-radius:12px;padding:1rem;">
+          <h4 style="font-size:0.95rem;margin-bottom:0.4rem;">1️⃣ 个人信息区</h4>
+          <ul class="checklist">
+            <li><span class="check">•</span> 姓名按护照拼音填写，全部大写</li>
+            <li><span class="check">•</span> 出生日期格式：日-月-年，例如 19-08-1995</li>
+            <li><span class="check">•</span> 护照号、签发日期、有效期、签发机关按护照填写</li>
+            <li><span class="check">•</span> 中文地址转大写拼音，联系方式写 +86 手机号 + 邮箱</li>
+          </ul>
+        </div>
+        <div style="background:#faf8f5;border-radius:12px;padding:1rem;">
+          <h4 style="font-size:0.95rem;margin-bottom:0.4rem;">2️⃣ 旅行信息区</h4>
+          <ul class="checklist">
+            <li><span class="check">•</span> 入境/离境日期与机票预订单完全一致</li>
+            <li><span class="check">•</span> 停留天数要算准，并与英文行程单匹配</li>
+            <li><span class="check">•</span> 出行目的勾选 Tourism，其他选项按实际需要</li>
+            <li><span class="check">•</span> 住宿信息填写酒店全称 + 地址，与酒店订单一致</li>
+          </ul>
+        </div>
+        <div style="background:#faf8f5;border-radius:12px;padding:1rem;">
+          <h4 style="font-size:0.95rem;margin-bottom:0.4rem;">3️⃣ 工作/学习信息</h4>
+          <ul class="checklist">
+            <li><span class="check">•</span> 职业如实填写：职位名称 / Student / Freelancer 等</li>
+            <li><span class="check">•</span> 雇主或学校写全称、地址、电话</li>
+            <li><span class="check">•</span> 在职人员写月薪；学生/无业可写父母或配偶资助</li>
+          </ul>
+        </div>
+        <div style="background:#faf8f5;border-radius:12px;padding:1rem;">
+          <h4 style="font-size:0.95rem;margin-bottom:0.4rem;">4️⃣ 行程与费用</h4>
+          <ul class="checklist">
+            <li><span class="check">•</span> 行程描述可写：Spain and other Schengen countries tourism, total X days</li>
+            <li><span class="check">•</span> 费用承担方写本人承担，或写资助人姓名 + 关系</li>
+            <li><span class="check">•</span> 如果配偶随行，用出资声明信与结婚公证互相支撑</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="table-wrap" style="margin-top:1rem;">
+        <table>
+          <thead><tr><th>项目</th><th>填写 / 准备要求</th></tr></thead>
+          <tbody>
+            <tr><td><strong>签名与日期</strong></td><td>签名栏手写中文签名，必须与护照签名一致；日期填写递交申请当天日期。未成年人需监护人签名。</td></tr>
+            <tr><td><strong>照片</strong></td><td>2 张 6 个月内白底彩照，3.5 × 4.5 cm。现场粘贴建议用双面胶，不要用订书机。</td></tr>
+            <tr><td><strong>材料配套</strong></td><td>申请表 1 份、照片 2 张、有效护照及全本复印件、往返机票预订单、全程酒店预订单、3 万欧元保额旅行保险、近 6 个月银行流水。</td></tr>
+            <tr><td><strong>预约时间</strong></td><td>建议提前 2–3 个月预约递签，旺季预留更长时间；首次申请需本人到场采集指纹，指纹一般 59 个月内有效。</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="template-grid">
+        <figure class="template-shot"><img src="assets/xhs-spain-visa-form/form-template-01.jpg" alt="西班牙申根签证申请表填写模板第1页"><figcaption>第 1 页：姓名、出生信息、国籍、证件类型</figcaption></figure>
+        <figure class="template-shot"><img src="assets/xhs-spain-visa-form/form-template-02.jpg" alt="西班牙申根签证申请表填写模板第2页"><figcaption>第 2 页：护照信息、职业、联系人信息</figcaption></figure>
+        <figure class="template-shot"><img src="assets/xhs-spain-visa-form/form-template-03.jpg" alt="西班牙申根签证申请表填写模板第3页"><figcaption>第 3 页：旅行目的、目的地、入境次数</figcaption></figure>
+        <figure class="template-shot"><img src="assets/xhs-spain-visa-form/form-template-04.jpg" alt="西班牙申根签证申请表填写模板第4页"><figcaption>第 4 页：住宿/邀请方、费用承担方式</figcaption></figure>
+        <figure class="template-shot"><img src="assets/xhs-spain-visa-form/form-template-05.jpg" alt="西班牙申根签证申请表填写模板第5页"><figcaption>第 5 页：欧盟亲属、声明与确认</figcaption></figure>
+        <figure class="template-shot"><img src="assets/xhs-spain-visa-form/form-template-06.jpg" alt="西班牙申根签证申请表填写模板第6页"><figcaption>第 6 页：最终签名、地点与日期</figcaption></figure>
+      </div>
+
+      <p style="color:var(--text-secondary);font-size:0.78rem;margin-top:0.8rem;">
+        来源参考：小红书用户「西示风」笔记《🇪🇸西班牙申根签证表DIY必备填写模板📑》。图片用于个人申请准备时核对字段，不替代 BLS / 西班牙领馆最新官方要求。
+      </p>
     </div>
 
     <!-- ===== BLS 预约 + 递签流程 ===== -->
