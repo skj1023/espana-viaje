@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🇪🇸 康杰 & 媳妇 · 西班牙之旅</title>
+<title>🇪🇸 西班牙申根签证 · 全流程资料包</title>
+<meta name="description" content="康杰 & 媳妇 西班牙申根签证全流程资料包：BLS预约、材料清单、申请表模板、在职证明模板、办理流程及注意事项">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
   :root {
     --bg: #faf8f5;
@@ -20,7 +21,7 @@
     --tag-bg: #f5f0eb;
     --shadow: 0 2px 12px rgba(0,0,0,0.06);
     --radius: 16px;
-    --max-w: 900px;
+    --max-w: 920px;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -31,15 +32,14 @@
     font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
     background: var(--bg);
     color: var(--text);
-    line-height: 1.6;
+    line-height: 1.7;
     -webkit-font-smoothing: antialiased;
   }
 
   /* ===== Hero ===== */
   .hero {
     position: relative;
-    height: 100vh;
-    min-height: 600px;
+    min-height: 420px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,13 +65,13 @@
       radial-gradient(circle at 20% 50%, #d4a853 0, transparent 50%);
   }
 
-  .hero-content { position: relative; z-index: 1; padding: 2rem; }
+  .hero-content { position: relative; z-index: 1; padding: 3rem 1.5rem; }
 
-  .hero-flag { font-size: 4rem; margin-bottom: 1rem; display: block; }
+  .hero-flag { font-size: 4rem; margin-bottom: 0.8rem; display: block; }
 
   .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-family: 'Inter', 'Noto Sans SC', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
     font-weight: 700;
     color: #fff;
     letter-spacing: -0.02em;
@@ -81,9 +81,9 @@
   .hero h1 .accent { color: var(--gold); }
 
   .hero p {
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
     color: rgba(255,255,255,0.7);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     font-weight: 300;
     letter-spacing: 0.02em;
   }
@@ -91,39 +91,22 @@
   .hero-badge-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.6rem;
+    gap: 0.5rem;
     justify-content: center;
-    margin-bottom: 2.5rem;
   }
 
   .hero-badge {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
-    padding: 0.4rem 1rem;
+    gap: 0.35rem;
+    padding: 0.35rem 0.9rem;
     border-radius: 100px;
     background: rgba(255,255,255,0.12);
     backdrop-filter: blur(8px);
     color: #fff;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 400;
     border: 1px solid rgba(255,255,255,0.15);
-  }
-
-  .hero-scroll {
-    position: absolute;
-    bottom: 2.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgba(255,255,255,0.5);
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    animation: bounce 2s infinite;
-  }
-
-  @keyframes bounce {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(8px); }
   }
 
   /* ===== Nav ===== */
@@ -152,13 +135,14 @@
 
   .nav a {
     flex-shrink: 0;
-    padding: 0.4rem 0.9rem;
+    padding: 0.4rem 0.85rem;
     border-radius: 8px;
     color: var(--text-secondary);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-weight: 500;
     transition: all 0.2s;
+    white-space: nowrap;
   }
 
   .nav a:hover,
@@ -174,9 +158,7 @@
     padding: 0 1.5rem;
   }
 
-  section {
-    padding: 4rem 0;
-  }
+  section { padding: 3.5rem 0; }
 
   .section-label {
     display: inline-block;
@@ -185,48 +167,20 @@
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--accent);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.6rem;
   }
 
   h2 {
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-size: clamp(1.4rem, 2.8vw, 1.9rem);
     font-weight: 600;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.6rem;
     letter-spacing: -0.01em;
   }
 
   .section-desc {
     color: var(--text-secondary);
-    font-size: 1rem;
-    margin-bottom: 2.5rem;
-    max-width: 640px;
-  }
-
-  /* ===== Cards ===== */
-  .card {
-    background: var(--surface);
-    border-radius: var(--radius);
-    padding: 1.8rem;
-    box-shadow: var(--shadow);
-    border: 1px solid var(--border);
-    margin-bottom: 1rem;
-  }
-
-  .card h3 {
-    font-size: 1.15rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .card h3 .emoji { font-size: 1.3rem; }
-
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
   }
 
   /* ===== Timeline ===== */
@@ -242,14 +196,16 @@
     top: 4px;
     bottom: 4px;
     width: 2px;
-    background: linear-gradient(to bottom, var(--accent), var(--gold), var(--accent));
+    background: linear-gradient(to bottom, var(--accent), var(--gold));
     border-radius: 2px;
   }
 
   .timeline-item {
     position: relative;
-    padding: 0 0 2rem 1.5rem;
+    padding: 0 0 1.8rem 1.5rem;
   }
+
+  .timeline-item:last-child { padding-bottom: 0; }
 
   .timeline-item::before {
     content: '';
@@ -264,26 +220,61 @@
     box-shadow: 0 0 0 2px var(--accent);
   }
 
-  .timeline-item:last-child { padding-bottom: 0; }
-
   .timeline-item .date {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 600;
     color: var(--accent);
-    text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.15rem;
   }
 
   .timeline-item h4 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.2rem;
   }
 
-  .timeline-item p {
+  .timeline-item p, .timeline-item ul {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 0.88rem;
+  }
+
+  .timeline-item ul {
+    padding-left: 1.2rem;
+    margin-top: 0.3rem;
+  }
+  .timeline-item li { margin-bottom: 0.15rem; }
+
+  /* ===== Card ===== */
+  .card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 1.6rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    margin-bottom: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .card h3 .emoji { font-size: 1.2rem; }
+
+  .card p, .card li { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; }
+
+  .card ul, .card ol { padding-left: 1.2rem; margin-top: 0.4rem; }
+  .card li { margin-bottom: 0.3rem; }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
   }
 
   /* ===== Table ===== */
@@ -296,720 +287,563 @@
   table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
   }
 
-  thead {
-    background: #f5f0eb;
-  }
+  thead { background: var(--tag-bg); }
 
   th {
+    padding: 0.75rem 1rem;
     text-align: left;
-    padding: 0.85rem 1rem;
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
     color: var(--text-secondary);
-    white-space: nowrap;
+    border-bottom: 1px solid var(--border);
   }
 
   td {
     padding: 0.75rem 1rem;
-    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
   }
 
-  tr:hover td { background: #faf8f5; }
-
-  /* ===== Day Cards ===== */
-  .day-card {
-    background: var(--surface);
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-    overflow: hidden;
-    margin-bottom: 1rem;
-    transition: all 0.2s;
-  }
-
-  .day-card:hover { box-shadow: var(--shadow); }
-
-  .day-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.2rem 1.5rem;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  .day-header h3 {
-    margin: 0;
-    font-size: 1.05rem;
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-  }
-
-  .day-header .day-num {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 8px;
-    background: var(--accent);
-    color: #fff;
-    font-size: 0.8rem;
-    font-weight: 700;
-  }
-
-  .day-header .toggle-icon {
-    color: var(--text-secondary);
-    font-size: 1.2rem;
-    transition: transform 0.3s;
-  }
-
-  .day-body {
-    padding: 0 1.5rem 1.5rem;
-    display: none;
-  }
-
-  .day-card.open .day-body { display: block; }
-  .day-card.open .toggle-icon { transform: rotate(180deg); }
-
-  .day-body ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .day-body li {
-    padding: 0.4rem 0;
-    font-size: 0.92rem;
-    display: flex;
-    align-items: flex-start;
-    gap: 0.6rem;
-    color: var(--text-secondary);
-  }
-
-  .day-body li .time { color: var(--accent); font-weight: 500; white-space: nowrap; min-width: 4.2rem; }
-
-  .day-tag {
-    display: inline-block;
-    padding: 0.15rem 0.6rem;
-    border-radius: 6px;
-    font-size: 0.75rem;
-    font-weight: 500;
-    background: var(--tag-bg);
-    color: var(--text-secondary);
-    margin-right: 0.3rem;
-  }
-
-  .day-tag.meal { background: #fff0e0; color: #b85a1a; }
-  .day-tag.sight { background: #e0f0ff; color: #1a6ab8; }
-  .day-tag.transport { background: #e8f5e9; color: #2e7d32; }
-  .day-tag.tip { background: #fce4ec; color: #c62828; }
-
-  /* ===== Tags ===== */
-  .tag-list { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.5rem 0; }
+  tr:last-child td { border-bottom: none; }
 
   .tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 0.25rem 0.65rem;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
     border-radius: 6px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    background: var(--tag-bg);
-    color: var(--text-secondary);
-  }
-
-  .tag.red { background: #fde8e6; color: var(--accent); }
-  .tag.gold { background: var(--gold-light); color: #8b6914; }
-  .tag.green { background: #e8f5e9; color: #2e7d32; }
-  .tag.blue { background: #e0f0ff; color: #1a6ab8; }
-
-  /* ===== Quote ===== */
-  .quote {
-    background: linear-gradient(135deg, var(--gold-light) 0%, #faf8f5 100%);
-    border-left: 4px solid var(--gold);
-    padding: 1.5rem 2rem;
-    border-radius: 0 var(--radius) var(--radius) 0;
-    margin: 1.5rem 0;
-    font-style: italic;
-    color: var(--text-secondary);
-  }
-
-  /* ===== Checklist ===== */
-  .checklist { list-style: none; padding: 0; }
-
-  .checklist li {
-    padding: 0.5rem 0;
-    font-size: 0.92rem;
-    display: flex;
-    align-items: flex-start;
-    gap: 0.6rem;
-    color: var(--text-secondary);
-  }
-
-  .checklist li .check { color: var(--accent); font-weight: 700; }
-
-  /* ===== Budget Table ===== */
-  .budget-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0.8rem;
-  }
-
-  .budget-item {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.2rem;
-    text-align: center;
-  }
-
-  .budget-item .label {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    margin-bottom: 0.3rem;
-  }
-
-  .budget-item .amount {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--accent);
-  }
-
-  .budget-item .note {
     font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin-top: 0.2rem;
+    font-weight: 500;
   }
+  .tag-required { background: #fef2f2; color: #dc2626; }
+  .tag-optional { background: #f5f5f5; color: #78716c; }
+  .tag-recommend { background: #fffbeb; color: #d97706; }
 
-  .budget-total {
-    grid-column: 1 / -1;
-    background: linear-gradient(135deg, var(--accent), var(--accent-light));
-    color: #fff;
-    border: none;
-  }
-
-  .budget-total .label { color: rgba(255,255,255,0.7); }
-  .budget-total .amount { color: #fff; }
-  .budget-total .note { color: rgba(255,255,255,0.6); }
-
-  /* ===== Accordion ===== */
-  .accordion { margin: 1rem 0; }
-
-  .accordion-item {
-    border: 1px solid var(--border);
+  /* ===== Alert ===== */
+  .alert {
+    padding: 1rem 1.2rem;
     border-radius: 12px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+  .alert-warn {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    color: #92400e;
+  }
+  .alert-info {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    color: #1e40af;
+  }
+  .alert-danger {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+  }
+
+  /* ===== Code/Pre ===== */
+  .template-box {
+    background: #f5f5f7;
+    border-radius: 12px;
+    padding: 1.2rem 1.4rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-word;
+    border: 1px solid var(--border);
+    margin-top: 0.5rem;
+  }
+
+  /* ===== Misc ===== */
+  .account-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .account-label { font-weight: 600; min-width: 80px; font-size: 0.9rem; }
+  .account-value {
+    font-family: 'Courier New', monospace;
+    background: #f5f5f7;
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+  }
+
+  .link-icon { text-decoration: none; color: var(--accent); font-weight: 500; }
+  .link-icon:hover { text-decoration: underline; }
+
+  .footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+  }
+
+  /* ===== Collapse ===== */
+  details {
+    background: var(--surface);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    margin-bottom: 0.75rem;
     overflow: hidden;
   }
-
-  .accordion-header {
+  details summary {
     padding: 1rem 1.2rem;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    font-weight: 500;
-    font-size: 0.95rem;
+    gap: 0.5rem;
     user-select: none;
-    transition: background 0.2s;
   }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before { content: '▶'; font-size: 0.7rem; transition: transform 0.2s; }
+  details[open] summary::before { content: '▼'; }
+  details .detail-body { padding: 0 1.2rem 1rem 1.2rem; }
+  details .detail-body p, details .detail-body li { font-size: 0.88rem; color: var(--text-secondary); }
 
-  .accordion-header:hover { background: #faf8f5; }
-
-  .accordion-header .arrow {
-    transition: transform 0.3s;
-    color: var(--text-secondary);
-  }
-
-  .accordion-item.open .accordion-header .arrow { transform: rotate(180deg); }
-
-  .accordion-body {
-    padding: 0 1.2rem 1.2rem;
-    display: none;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    line-height: 1.7;
-  }
-
-  .accordion-item.open .accordion-body { display: block; }
-
-  /* ===== Code Block ===== */
-  .code-block {
-    background: #1d1d1f;
-    color: #f0ece4;
-    border-radius: 12px;
-    padding: 1.2rem;
-    font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
-    font-size: 0.8rem;
-    line-height: 1.6;
-    overflow-x: auto;
-    white-space: pre;
-    margin: 0.8rem 0;
-  }
-
-  /* ===== Step List ===== */
-  .step-list {
-    list-style: none;
-    padding: 0;
-    counter-reset: step-counter;
-  }
-  .step-list li {
-    counter-increment: step-counter;
-    padding: 0.5rem 0 0.5rem 2.2rem;
+  .checklist { list-style: none; padding-left: 0 !important; }
+  .checklist li {
     position: relative;
-    font-size: 0.92rem;
-    color: var(--text-secondary);
+    padding-left: 1.6rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.88rem;
   }
-  .step-list li::before {
-    content: counter(step-counter);
-    position: absolute;
-    left: 0;
-    top: 0.45rem;
-    width: 1.5rem;
-    height: 1.5rem;
+  .checklist li::before { content: '☐'; position: absolute; left: 0; color: var(--accent); font-size: 1rem; line-height: 1.5; }
+
+  .step-num {
+    display: inline-flex;
+    width: 24px; height: 24px;
     border-radius: 50%;
     background: var(--accent);
     color: #fff;
     font-size: 0.75rem;
     font-weight: 600;
-    display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  /* ===== Info Box ===== */
-  .info-box {
-    border-radius: 12px;
-    padding: 1rem 1.2rem;
-    margin: 0.8rem 0;
-    font-size: 0.9rem;
-    line-height: 1.6;
-  }
-  .info-box.warn {
-    background: #fff8e1;
-    border-left: 4px solid #f9a825;
-    color: #6d4c00;
-  }
-  .info-box.tip {
-    background: #e8f5e9;
-    border-left: 4px solid #43a047;
-    color: #1b5e20;
-  }
-  .info-box.red {
-    background: #fde8e6;
-    border-left: 4px solid var(--accent);
-    color: #8b1a1a;
-  }
-
-  /* ===== Sub Section Title ===== */
-  .sub-title {
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin: 1.5rem 0 0.8rem;
-    padding-bottom: 0.4rem;
-    border-bottom: 2px solid var(--gold-light);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .sub-title-sm {
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin: 1rem 0 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  /* ===== Footer ===== */
-  footer {
-    text-align: center;
-    padding: 3rem 1.5rem;
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-    border-top: 1px solid var(--border);
-  }
-
-  footer .hearts { color: var(--accent); }
-
-  /* ===== Progress ===== */
-  .progress-steps {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    margin: 1.5rem 0;
-  }
-
-  .progress-step {
-    flex: 1;
-    min-width: 120px;
-    padding: 1rem;
-    background: var(--surface);
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    text-align: center;
-  }
-
-  .progress-step .step-num {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: var(--gold-light);
-    color: #8b6914;
-    font-weight: 700;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .progress-step h5 {
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-  }
-
-  .progress-step p {
-    font-size: 0.78rem;
-    color: var(--text-secondary);
-  }
-
-  /* ===== Visa Form Template Gallery ===== */
-  .template-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 0.9rem;
-    margin-top: 1rem;
-  }
-
-  .template-shot {
-    background: #faf8f5;
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 1px 8px rgba(0,0,0,0.04);
-  }
-
-  .template-shot img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
-    object-position: top;
-  }
-
-  .template-shot figcaption {
-    padding: 0.65rem 0.75rem;
-    font-size: 0.78rem;
-    color: var(--text-secondary);
-    border-top: 1px solid var(--border);
-  }
-
-  /* ===== Map Placeholder ===== */
-  .route-svg {
-    display: block;
-    width: 100%;
-    max-width: 600px;
-    margin: 1.5rem auto;
-    border-radius: var(--radius);
-  }
-
-  /* ===== Responsive ===== */
-  @media (max-width: 640px) {
-    .hero h1 { font-size: 2.4rem; }
-    .card { padding: 1.2rem; }
-    .day-header { padding: 1rem 1.2rem; }
-    .day-body { padding: 0 1.2rem 1.2rem; }
-    .nav { padding: 0 0.75rem; }
-    .nav a { font-size: 0.78rem; padding: 0.35rem 0.7rem; }
-  }
-
-  /* ===== Print ===== */
-  @media print {
-    .nav { display: none; }
-    .hero { height: auto; min-height: auto; padding: 4rem 0; }
-    .hero-scroll { display: none; }
-    .day-body { display: block !important; }
-    .day-card .toggle-icon { display: none; }
+    flex-shrink: 0;
   }
 </style>
 </head>
 <body>
 
-<!-- ======== HERO ======== -->
-<section class="hero">
+<!-- ===== Hero ===== -->
+<div class="hero">
   <div class="hero-pattern"></div>
   <div class="hero-content">
     <span class="hero-flag">🇪🇸</span>
-    <h1>康杰 &<br><span class="accent">España</span></h1>
-    <p>两个人的西班牙之梦 · 2026 国庆</p>
+    <h1>西班牙申根签证<br><span class="accent">全流程资料包</span></h1>
+    <p>康杰 & 媳妇 · BLS 上海领区 · 旅游签证</p>
     <div class="hero-badge-group">
-      <span class="hero-badge">✈️ 上海出发</span>
-      <span class="hero-badge">🏛️ 圣家堂完工之年</span>
-      <span class="hero-badge">📅 7天浪漫之旅</span>
-      <span class="hero-badge">💃 弗拉门戈之夜</span>
+      <span class="hero-badge">📍 上海 BLS 递签</span>
+      <span class="hero-badge">📋 C 类 · 旅游</span>
+      <span class="hero-badge">🕐 15-20 工作日</span>
+      <span class="hero-badge">💶 €90/人</span>
     </div>
   </div>
-  <div class="hero-scroll">向下浏览</div>
-</section>
+</div>
 
-<!-- ======== NAV ======== -->
-<nav class="nav" id="navbar">
+<!-- ===== Nav ===== -->
+<nav class="nav" id="topNav">
   <div class="nav-inner">
-    <a href="#visa">📋 签证攻略</a>
-    <a href="#visa-form-template">📝 填表模板</a>
-    <a href="#itinerary">🗺️ 行程规划</a>
-    <a href="#food">🍽️ 美食地图</a>
-    <a href="#budget">💰 预算参考</a>
-    <a href="#info">🔌 实用信息</a>
-    <a href="#checklist">✅ 行前清单</a>
+    <a href="#process">📋 办理流程</a>
+    <a href="#bls">🕐 BLS 预约</a>
+    <a href="#documents">📄 材料清单</a>
+    <a href="#supplement">👤 按身份补充</a>
+    <a href="#form">📝 申请表</a>
+    <a href="#template">📎 模板</a>
+    <a href="#notes">⚠️ 注意事项</a>
   </div>
 </nav>
 
-<!-- ======== VISA ======== -->
-<section id="visa" style="background: #f5f0eb;">
-  <div class="container">
-    <span class="section-label">📍 上海领区 · 两人同行</span>
-    <h2>📋 西班牙申根签证完全攻略</h2>
-    <p class="section-desc">在职人员 + 配偶随行 · 2026 年十一出行 · 上海 BLS 签证中心递签</p>
+<!-- ===== Content ===== -->
+<div class="container">
 
-    <!-- ===== 倒排期 ===== -->
-    <div class="card">
-      <h3><span class="emoji">⏰</span> 倒排期时间线 · 从出发日倒推</h3>
-      <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1rem;">
-        2026 年 10 月 1 日出发 → 倒推每个时间节点该做什么
-      </p>
+<!-- ============ 办理流程 ============ -->
+<section id="process">
+  <span class="section-label">Timeline</span>
+  <h2>🗓️ 办理流程总览</h2>
+  <p class="section-desc">从准备材料到拿到护照的完整路径，按实际执行顺序排列。</p>
 
-      <div class="progress-steps">
-        <div class="progress-step">
-          <div class="step-num">①</div>
-          <h5>6 月下旬</h5>
-          <p>准备材料 + 办结婚公证</p>
-        </div>
-        <div class="progress-step">
-          <div class="step-num">②</div>
-          <h5>7 月上旬</h5>
-          <p>在线填表 + 抢预约号</p>
-        </div>
-        <div class="progress-step">
-          <div class="step-num">③</div>
-          <h5>7 月中下旬</h5>
-          <p>递签 + 录指纹（两人）</p>
-        </div>
-        <div class="progress-step">
-          <div class="step-num">④</div>
-          <h5>8 月中下旬</h5>
-          <p>等待出签 + 查进度</p>
-        </div>
-        <div class="progress-step">
-          <div class="step-num">⑤</div>
-          <h5>9 月初</h5>
-          <p>签到手 → 买机票订酒店</p>
-        </div>
-        <div class="progress-step">
-          <div class="step-num">🎉</div>
-          <h5>10 月 1 日</h5>
-          <p>出发！🇪🇸</p>
-        </div>
-      </div>
-
-      <div class="timeline" style="margin-top:0.5rem;">
-        <div class="timeline-item">
-          <div class="date">2026 年 6 月下旬 · 倒计时 3 个月</div>
-          <h4>📄 准备全部材料 + 办结婚公证</h4>
-          <p>
-            - 整理护照、身份证、户口本<br>
-            - 找公司开中英文在职证明 + 营业执照副本（盖章）<br>
-            - 打印近 3–6 个月工资卡银行流水<br>
-            - 去公证处办结婚公证 + 单认证（需 2–3 周）<br>
-            - 买旅行保险（电子保单彩色打印）<br>
-            - 订可免费取消的酒店（Booking）<br>
-            - 用穷游助手做英文行程单<br>
-            - 在携程/飞猪出未付款的机票预订单
-          </p>
-        </div>
-        <div class="timeline-item">
-          <div class="date">2026 年 7 月上旬 · 倒计时 2.5 个月</div>
-          <h4>🌐 在线填申请表 + 抢预约号</h4>
-          <p>
-            - 在西班牙外交部网站填写申请表并打印<br>
-            - 每天刷 BLS 网站抢号（建议早上 8–9 点）<br>
-            - 两人预约同一天相邻时段<br>
-            - 打印预约确认单
-          </p>
-        </div>
-        <div class="timeline-item">
-          <div class="date">2026 年 7 月中下旬 · 倒计时 2 个月</div>
-          <h4>🏢 递签 + 录指纹</h4>
-          <p>
-            - 本人到上海 BLS 签证中心交材料<br>
-            - 录指纹（10 指）+ 现场拍照<br>
-            - 缴费（约 ¥800/人）<br>
-            - 领回执单，用于查询进度
-          </p>
-        </div>
-        <div class="timeline-item">
-          <div class="date">2026 年 8 月中下旬 · 倒计时 1 个月</div>
-          <h4>📬 等待出签</h4>
-          <p>
-            - 官方 15 个自然日，高峰期可能 20–30 天<br>
-            - 用回执单上的号码在 BLS 网站查进度<br>
-            - 保持手机畅通（可能有电话调查）<br>
-            - 出签后可选自取或快递到家（¥60/本）
-          </p>
-        </div>
-        <div class="timeline-item">
-          <div class="date">2026 年 9 月 · 倒计时 2–4 周</div>
-          <h4>✅ 签到手后：订票 + 预订</h4>
-          <p>
-            - 购买正式机票（此时价格可能上涨，但有签证保障）<br>
-            - 把免费取消的酒店换成更心仪的<br>
-            - 预订圣家堂门票（提前 1–2 个月！）<br>
-            - 预订高铁 AVE 票（提前购票折扣大）<br>
-            - 买欧洲电话卡 + 换欧元现金
-          </p>
-        </div>
-        <div class="timeline-item">
-          <div class="date">2026 年 10 月 1 日</div>
-          <h4>✈️ 出发！¡Vamos!</h4>
-          <p>上海 → 巴塞罗那，开启西班牙之旅 🇪🇸</p>
-        </div>
-      </div>
-
-      <div class="info-box red" style="margin-top:1rem;">
-        <strong>⚠️ 关键提醒：</strong>广州领区预约号极其紧张（随机放号），上海领区相对好约但也建议尽早。7 月是暑期高峰，<strong>一旦拿到预约号就尽快递签</strong>，不要拖到 8 月（欧洲假期审理变慢）。
-      </div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="date">Step 1</div>
+      <h4>预约录指纹时间</h4>
+      <p>了解基本资料后先约号（交资料和按指纹的时间），再协助准备签证所需资料。</p>
     </div>
-
-    <!-- ===== 基本信息 ===== -->
-    <div class="card">
-      <h3><span class="emoji">ℹ️</span> 基本信息速览</h3>
-      <div class="table-wrap">
-        <table>
-          <tbody>
-            <tr><td style="font-weight:600;width:140px;">签证类型</td><td>短期申根签证（C 类）· 旅游</td></tr>
-            <tr><td style="font-weight:600;">受理领区</td><td>上海领区（上海市、江苏省、浙江省、安徽省、江西省）</td></tr>
-            <tr><td style="font-weight:600;">签证中心</td><td>BLS 西班牙签证中心 · 上海<br>📍 黄浦区四川中路 213 号 久事商务大厦 3 层<br>🚇 地铁 2/10 号线 南京东路站 2 号口<br>🕐 周一至周五 8:00–15:00（需提前预约）</td></tr>
-            <tr><td style="font-weight:600;">费用（两人）</td><td>签证费 €90/人（约 ¥700）<br>+ BLS 服务费约 ¥120/人<br>+ 快递费 ¥60/本（可选）<br>≈ 合计 <strong>¥1,600–2,000</strong></td></tr>
-            <tr><td style="font-weight:600;">审理时间</td><td>官方 15 个自然日，高峰期 20–30 天</td></tr>
-            <tr><td style="font-weight:600;">指纹</td><td>首次申根需本人到场录 10 指指纹（59 个月内有效）</td></tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="timeline-item">
+      <div class="date">Step 2</div>
+      <h4>准备全部材料</h4>
+      <p>按下方材料清单准备纸质版资料，一人一套。注意所有材料需一致（申请表、行程、保险、机票酒店订单）。</p>
     </div>
-
-    <!-- ===== 材料清单 ===== -->
-    <div class="card">
-      <h3><span class="emoji">📋</span> 完整材料清单（你 + 媳妇）</h3>
-      <div class="info-box tip">
-        <strong>💡 两人关系：</strong>你是在职人员，媳妇随行。媳妇无需提供工作证明和经济材料，用你的在职证明 + 银行流水 + 结婚公证书 + 出资声明信即可。
-      </div>
-
-      <div class="table-wrap" style="margin-top:1rem;">
-        <table>
-          <thead>
-            <tr><th style="width:36px">#</th><th style="width:160px;">材料</th><th>详细要求</th><th style="width:70px;">谁准备</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td><td><strong>护照</strong></td>
-              <td>有效期 > 回国日期 + 3 个月（即 2027 年 1 月后），至少 2 页空白签证页。整本复印（含空白页）。如有旧护照一并提供。</td>
-              <td>两人</td>
-            </tr>
-            <tr>
-              <td>2</td><td><strong>签证申请表</strong></td>
-              <td>在西班牙外交部官网 <code>sutramiteconsular.maec.es</code> 在线填写，用英文大写字母填写。打印后最后一页签名（中英文签名均可）。</td>
-              <td>两人</td>
-            </tr>
-            <tr>
-              <td>3</td><td><strong>白底彩照 ×2</strong></td>
-              <td>35mm × 45mm，6 个月内近照，白底、露双耳、不戴眼镜、不露齿。背面用铅笔写名字（不要用签字笔会蹭花）。</td>
-              <td>两人</td>
-            </tr>
-            <tr>
-              <td>4</td><td><strong>身份证复印件</strong></td>
-              <td>正反面复印在同一张 A4 纸上。</td>
-              <td>两人</td>
-            </tr>
-            <tr>
-              <td>5</td><td><strong>户口本复印件</strong></td>
-              <td>整本复印（所有信息页，含空白页），原件带过去核验。</td>
-              <td>两人</td>
-            </tr>
-            <tr>
-              <td>6</td><td><strong>结婚证复印件</strong></td>
-              <td>两人结婚证各复印一份。</td>
-              <td>两人</td>
-            </tr>
-            <tr>
-              <td>7</td><td><strong>结婚公证书</strong></td>
-              <td>到涉外公证处办结婚公证（中英文/中西文），再到外事办做单认证。详见下方「结婚公证办理」。</td>
-              <td>配偶材料</td>
-            </tr>
-            <tr>
-              <td>8</td><td><strong>在职证明</strong></td>
-              <td>中英文双语，公司抬头纸打印 + 公章 + 领导签字。内容：姓名、护照号、职位、月薪、入职日期、准假日期、费用承担方、保证回国。</td>
-              <td>你</td>
-            </tr>
-            <tr>
-              <td>9</td><td><strong>营业执照副本复印件</strong></td>
-              <td>加盖公司公章，注意公章要清晰可读。</td>
-              <td>你</td>
-            </tr>
-            <tr>
-              <td>10</td><td><strong>银行流水</strong></td>
-              <td>近 3–6 个月工资卡流水，银行柜台打印中英文双语版 + 盖章。余额建议 ≥ 5 万/人。两人共用一份流水也可以，余额建议 ≥ 8 万。</td>
-              <td>你为主</td>
-            </tr>
-            <tr>
-              <td>11</td><td><strong>出资声明信</strong></td>
-              <td>由你（在职方）手写或打印签名，声明承担媳妇全部旅行费用。英文或中英文双语。模板见下方。</td>
-              <td>你 → 配偶</td>
-            </tr>
-            <tr>
-              <td>12</td><td><strong>行程单</strong></td>
-              <td>英文版，每日安排：日期·城市·景点·交通·住宿。建议用穷游「行程助手」App 生成，导出为英文版。</td>
-              <td>两人</td>
-            </tr>
-            <tr>
-              <td>13</td><td><strong>机票预订</strong></td>
-              <td>携程/飞猪可出未付款的预订确认单（英文版），或订可全额退款的机票。注意姓名拼写要和护照一致。</td>
-              <td>两人</td>
-            </tr>
-            <tr>
-              <td>14</td><td><strong>酒店预订</strong></td>
-              <td>Booking 订可免费取消的酒店，覆盖全部住宿天数，预订单要显示所有入住人姓名。</td>
-              <td>两人</td>
-            </tr>
-            <tr>
-              <td>15</td><td><strong>旅行保险</strong></td>
-              <td>保额 ≥ 3 万欧元（≈ ¥24 万），覆盖全程申根区天数。支付宝搜「申根保险」可买。彩色打印保单。</td>
-              <td>两人</td>
-            </tr>
-            <tr>
-              <td>16</td><td><strong>房产证/车辆登记证</strong></td>
-              <td>非必需但加分。复印即可，原件带去核验。</td>
-              <td>你</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="timeline-item">
+      <div class="date">Step 3</div>
+      <h4>本人去签证中心递签 + 录指纹</h4>
+      <p>按预约时间本人到上海 BLS 签证中心，交签证费（€90/人）+ 服务费，刷号 ¥488/位（VIP 需线下另付 ¥388）。提交资料 + 录 10 指指纹。</p>
     </div>
+    <div class="timeline-item">
+      <div class="date">Step 4</div>
+      <h4>等待出签（15-20 天）</h4>
+      <p>使馆可能电话调查，请务必接听并确保回答与材料一致。审理时间官方 15 个自然日，高峰期可能延长至 20-30 天。</p>
+    </div>
+    <div class="timeline-item">
+      <div class="date">Step 5</div>
+      <h4>拿到护照 + 确认信息</h4>
+      <p>出签后需第一时间核对签证页上的个人信息（护照号、姓名拼音、性别等）。</p>
+    </div>
+  </div>
 
-    <!-- ===== 模板 ===== -->
+  <div class="alert alert-info" style="margin-top:1.5rem">
+    <strong>💡 倒排期参考：</strong>如计划 10 月 1 日出发，建议 6-7 月开始准备材料，7-8 月递签，预留充足审理时间。节日前后受理时长预计会变长。
+  </div>
+</section>
+
+<!-- ============ BLS 预约 ============ -->
+<section id="bls">
+  <span class="section-label">BLS Appointment</span>
+  <h2>🕐 BLS 西班牙签证中心 · 上海</h2>
+  <p class="section-desc">上海领区（上海市、江苏省、浙江省、安徽省、江西省）</p>
+
+  <div class="card-grid">
     <div class="card">
-      <h3><span class="emoji">📝</span> 材料模板（可直接使用）</h3>
+      <h3><span class="emoji">🔗</span> 预约入口</h3>
+      <p><a class="link-icon" href="https://web.blscn.cn/shanghai/" target="_blank">web.blscn.cn/shanghai/</a></p>
+      <p style="margin-top:0.5rem;font-size:0.85rem;color:var(--text-secondary)">在线预约递签和录指纹时间。</p>
+    </div>
+    <div class="card">
+      <h3><span class="emoji">📍</span> 地址</h3>
+      <p>黄浦区四川中路 213 号<br>久事商务大厦 3 层<br>🚇 地铁 2/10 号线 南京东路站 2 号口</p>
+    </div>
+    <div class="card">
+      <h3><span class="emoji">🕐</span> 工作时间</h3>
+      <p>周一至周五 8:00–15:00<br>需提前预约</p>
+    </div>
+    <div class="card">
+      <h3><span class="emoji">💳</span> 费用参考（两人）</h3>
+      <p>签证费 €90/人（约 ¥700）<br>+ BLS 服务费约 ¥120/人<br>+ 刷号费 ¥488/位<br>+ 快递费 ¥60/本（可选）<br>≈ 合计 ¥1,800–2,300</p>
+    </div>
+  </div>
 
-      <div class="sub-title">📄 在职证明 · 英文版</div>
-      <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:0.4rem;">
-        放在公司抬头纸上打印，中英文各一份或中英文双语合并。
-      </p>
-      <div class="code-block">[Company Letterhead]
+  <div class="card" style="margin-top:0.5rem">
+    <h3><span class="emoji">👤</span> 已注册账号信息</h3>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:0.8rem">如有自行在官网创建账号绑定护照信息请提前告知代办。</p>
+    <div class="account-row">
+      <span class="account-label">📧 邮箱</span>
+      <span class="account-value">liyuweijob@163.com</span>
+    </div>
+    <div class="account-row" style="margin-top:0.5rem">
+      <span class="account-label">🔑 密码</span>
+      <span class="account-value">Yuwei2008jing!</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 材料清单 ============ -->
+<section id="documents">
+  <span class="section-label">Checklist</span>
+  <h2>📄 必须提交的纸质材料</h2>
+  <p class="section-desc">以下为基础材料 + 在职人员补充材料，一人一套。标注「★」为提高出签率建议提供。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:50px">#</th>
+          <th style="width:140px">材料</th>
+          <th>说明</th>
+          <th style="width:80px">原件</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><strong>护照</strong></td>
+          <td>过去 10 年内签发，有效期 > 回国日期 + 3 个月，至少 2 页连续空白页。整本复印（含空白页）。如有旧护照一并提供。</td>
+          <td><span class="tag tag-required">需原件</span></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><strong>照片 ×2</strong></td>
+          <td>6 个月内近照，35×45mm，白底，面部占 70-80%。光面相纸打印，露双耳，不戴眼镜，不露齿。背面用铅笔写名字。</td>
+          <td><span class="tag tag-required">需原件</span></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><strong>身份证</strong></td>
+          <td>原件 + 正反面复印件（复印在同一张 A4 纸上）。</td>
+          <td><span class="tag tag-required">需原件</span></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong>户口本</strong></td>
+          <td>原件 + 整本复印件（所有信息页，含空白页）。</td>
+          <td><span class="tag tag-required">需原件</span></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><strong>结婚证</strong></td>
+          <td>复印件（两人结婚证各复印一份）。</td>
+          <td><span class="tag tag-optional">复印件</span></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><strong>银行流水</strong></td>
+          <td>近 6 个月工资卡流水，柜台打印中英文版 + 银行受理章。余额建议 ≥ 4-5 万/人（或两人共用 ≥ 8 万）。不要临时大额存入。</td>
+          <td><span class="tag tag-required">需原件</span></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><strong>在职证明</strong></td>
+          <td>中英文双语，公司抬头纸打印 + 公章 + 领导签字。含：姓名、护照号、职位、月薪、入职日期、准假日期、费用承担方。</td>
+          <td><span class="tag tag-required">需原件</span></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td><strong>营业执照</strong></td>
+          <td>副本复印件加盖公章。政府和事业单位提供组织结构代码证复印件。</td>
+          <td><span class="tag tag-optional">复印件</span></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td><strong>社保缴纳记录</strong></td>
+          <td>近 6 个月社保缴纳记录（电子文件）。</td>
+          <td><span class="tag tag-optional">电子版</span></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td><strong>签证申请表</strong></td>
+          <td>在西班牙外交部官网在线填写，英文大写，A4 打印。最后一页签名（中英文签名均可）。</td>
+          <td><span class="tag tag-required">需原件</span></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td><strong>行程单</strong></td>
+          <td>英文版，每日安排：日期·城市·景点·交通·住宿。可用穷游行程助手生成。</td>
+          <td><span class="tag tag-required">需原件</span></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td><strong>机票预订</strong></td>
+          <td>携程/飞猪出未付款的预订确认单（英文版），或可全额退款的机票。姓名拼写与护照一致。</td>
+          <td><span class="tag tag-required">需原件</span></td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td><strong>酒店预订</strong></td>
+          <td>Booking 订可免费取消的酒店，覆盖全部住宿天数，预订单显示所有入住人姓名。注意酒店数量限制（见注意事项）。</td>
+          <td><span class="tag tag-required">需原件</span></td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td><strong>旅行保险</strong></td>
+          <td>保额 ≥ 3 万欧元（≈ ¥24 万），覆盖全程申根区。支付宝搜「申根保险」可买。彩色打印保单。</td>
+          <td><span class="tag tag-required">需原件</span></td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td><strong>出资声明</strong></td>
+          <td>由你（在职方）手写或打印签名，声明承担媳妇全部旅行费用。英文或中英文双语。</td>
+          <td><span class="tag tag-required">需原件</span></td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td><strong>固定资产 ★</strong></td>
+          <td>房产证/车辆登记证/存款证明/理财证明等。非必需但加分。复印即可，原件带去核验。</td>
+          <td><span class="tag tag-recommend">建议提供</span></td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td><strong>结婚公证书</strong></td>
+          <td>到涉外公证处办结婚公证（中英文/中西文），再到外事办做单认证。媳妇作为随行配偶需要。</td>
+          <td><span class="tag tag-required">需原件</span></td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td><strong>跨领区居住证</strong></td>
+          <td>如跨领区申请（例如北京户籍去广州领区），需提供 6 个月以上有效居住证复印件。</td>
+          <td><span class="tag tag-optional">按需</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 按身份补充材料 ============ -->
+<section id="supplement">
+  <span class="section-label">By Status</span>
+  <h2>👤 按身份分类补充材料</h2>
+  <p class="section-desc">根据申请人职业/身份选择对应补充材料。基础材料（上表）每位申请人都需提供。</p>
+
+  <details>
+    <summary>💼 在职人员补充材料</summary>
+    <div class="detail-body">
+      <ul>
+        <li><strong>在职证明</strong> — 中英文双语，公司抬头纸 + 公章 + 签字。含：公司地址电话、签字人姓名职务、申请人姓名职务收入及工作年限、准假证明。</li>
+        <li><strong>营业执照</strong> — 副本复印件加盖公章。政府/事业单位提供组织机构代码证副本复印件。如无法提供，写情况说明，由签证官决定。</li>
+        <li><strong>社保缴纳记录</strong>（电子文件）</li>
+        <li><strong>资格证书 ★</strong> — 工作证或职业资格证复印件（医生、老师、律师、会计师等）。</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>👵 退休人员补充材料</summary>
+    <div class="detail-body">
+      <ul>
+        <li><strong>退休证</strong> — 原件 + 复印件。</li>
+        <li><strong>出资人经济担保 ★</strong> — 如资金不足，提供配偶/子女的：收入证明原件、担保确认函、6 个月银行流水、关系证明（户口本/出生证/亲属关系公证件）、名下资产证明。</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>👶 学龄前儿童补充材料</summary>
+    <div class="detail-body">
+      <ul>
+        <li><strong>公证认证</strong> — 与父母双方同行：亲属关系公证认证。与一方出行：亲属关系公证 + 另一方委托同意书的公证认证（需列明出行国家、时间、逗留期间的负责人）。与其他监护人同行：亲属关系公证 + 父母双方委托同意书公证认证。</li>
+        <li><strong>出资人收入证明</strong> — 公司抬头纸 + 公章 + 签字。</li>
+        <li><strong>出资人银行流水</strong> — 近 6 个月，柜台办理加盖银行章。</li>
+        <li><strong>出生医学证明 ★</strong> — 内容页复印件 + 原件。</li>
+      </ul>
+      <p style="margin-top:0.5rem;color:#92400e;font-size:0.85rem;">⚠️ 所有公证书须包含中英文或中西文翻译。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>🎓 在校学生补充材料</summary>
+    <div class="detail-body">
+      <ul>
+        <li><strong>在读证明</strong> — 学校正式信头纸 + 公章 + 签字人亲笔签名（不接受电子签名）+ 准假确认。</li>
+        <li><strong>学生证</strong> — 原件 + 复印件。</li>
+        <li><strong>与出资人关系证明</strong> — 成年大学生提供亲属关系公证认证；未成年学生参考学龄前儿童材料。</li>
+        <li><strong>出资人收入证明</strong> — 公司抬头纸 + 公章 + 签字。</li>
+        <li><strong>出资人银行流水</strong> — 近 6 个月，柜台加盖银行章。</li>
+      </ul>
+      <p style="margin-top:0.5rem;color:#92400e;font-size:0.85rem;">⚠️ 所有公证书须包含中英文或中西文翻译。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>🆓 自由职业者 & 无业人员补充材料</summary>
+    <div class="detail-body">
+      <ul>
+        <li><strong>出资人收入证明</strong> — 公司抬头纸 + 公章 + 签字。</li>
+        <li><strong>出资人银行流水</strong> — 近 6 个月，柜台加盖银行章。</li>
+        <li><strong>与出资人关系证明</strong> — 已婚：婚姻关系公证认证（广州领区只需结婚证原件）；未婚：与父母/子女的亲属关系公证认证。</li>
+        <li><strong>收入来源证明 ★</strong> — 根据职业特性提供，如画册、摄影作品等。</li>
+        <li><strong>自由职业解释信 ★</strong> — 样本向客服索取。</li>
+      </ul>
+      <p style="margin-top:0.5rem;color:#92400e;font-size:0.85rem;">⚠️ 所有公证书须包含中英文或中西文翻译。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>⭐ 建议材料（加分项）</summary>
+    <div class="detail-body">
+      <table style="border:1px solid var(--border);border-radius:8px;font-size:0.85rem;margin-top:0.5rem">
+        <thead>
+          <tr>
+            <th>材料</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>结婚证</td><td>已婚提供上结婚证复印件。</td></tr>
+          <tr><td>房产</td><td>房产证/购房合同+发票复印件。</td></tr>
+          <tr><td>车产</td><td>机动车登记证书或行驶证复印件。</td></tr>
+          <tr><td>理财/投资证明</td><td>银行、基金或信托出具的理财产品证明、股票证明。</td></tr>
+          <tr><td>纳税证明</td><td>最近年度个人所得税税单复印件。</td></tr>
+          <tr><td>社保卡</td><td>正反面复印件（复印在一张纸上）。</td></tr>
+          <tr><td>资格证书</td><td>工作证或职业资格证复印件。</td></tr>
+          <tr><td>暂住证/居住证</td><td>有效 6 个月以上复印件（跨领区申请时需要）。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+</section>
+
+<!-- ============ 申根签证申请表 ============ -->
+<section id="form">
+  <span class="section-label">Application Form</span>
+  <h2>📝 西班牙申根签证申请表指南</h2>
+  <p class="section-desc">根据代办提供的申根签证资料表整理。原则：<strong>全程大写英文/西班牙文填写、A4 打印、本人签名与护照签名一致</strong>。</p>
+
+  <div class="alert alert-warn">
+    <strong>⚠️ 一致性优先：</strong>姓名拼音、出生日期、护照号、入境/离境日期、停留天数、酒店地址、机票预订单、行程单、保险天数必须互相一致。填错不要涂改，建议直接重新打印填写。
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>板块</th>
+          <th>字段</th>
+          <th>填写说明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="6"><strong>个人信息</strong></td>
+          <td>姓名</td>
+          <td>按护照拼音填写，全部大写</td>
+        </tr>
+        <tr><td>曾用名</td><td>如有请填写</td></tr>
+        <tr><td>出生日期</td><td>格式：日-月-年（如 19-08-1995）</td></tr>
+        <tr><td>出生地</td><td>地区及省份</td></tr>
+        <tr><td>身份证号</td><td>如实填写</td></tr>
+        <tr><td>婚姻状况</td><td>未婚/已婚/离婚/丧偶</td></tr>
+        <tr>
+          <td rowspan="4"><strong>联系方式</strong></td>
+          <td>家庭地址</td><td>现住址，中文转大写拼音</td></tr>
+        <tr><td>邮编</td><td>如实填写</td></tr>
+        <tr><td>手机</td><td>+86 开头</td></tr>
+        <tr><td>邮箱</td><td>常用邮箱</td></tr>
+        <tr>
+          <td rowspan="2"><strong>护照信息</strong></td>
+          <td>护照号码</td><td>按护照填写</td></tr>
+        <tr><td>签发地/日期/有效期</td><td>按护照填写，过去 3 年申根签证及拒签记录</td></tr>
+        <tr>
+          <td rowspan="4"><strong>旅行信息</strong></td>
+          <td>访问国家</td><td>主要停留国为西班牙</td></tr>
+        <tr><td>访问目的</td><td>旅游 Tourist / Tourism</td></tr>
+        <tr><td>出行/回程日期</td><td>与机票预订单完全一致</td></tr>
+        <tr><td>费用支付</td><td>本人/赞助人 + 现金/信用卡/旅行支票</td></tr>
+        <tr>
+          <td rowspan="2"><strong>工作信息</strong></td>
+          <td>单位名称（中英）</td><td>与在职证明一致</td></tr>
+        <tr><td>单位地址/电话/职位/月薪</td><td>与在职证明一致</td></tr>
+        <tr><td><strong>家庭状况</strong></td><td>父母姓名、配偶信息、子女</td><td>法国签证必填，申根建议填写</td></tr>
+        <tr><td><strong>同行人</strong></td><td>同行人信息</td><td>如有同行人，填写姓名、护照号、出生日期</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="margin-top:1.5rem" class="alert alert-info">
+    <strong>📌 填写入口：</strong>西班牙外交部官网 <a class="link-icon" href="https://sutramiteconsular.maec.es" target="_blank">sutramiteconsular.maec.es</a> — 在线填写，用英文大写字母填写。打印后最后一页签名（中英文签名均可）。
+  </div>
+</section>
+
+<!-- ============ 模板 ============ -->
+<section id="template">
+  <span class="section-label">Templates</span>
+  <h2>📎 材料模板</h2>
+  <p class="section-desc">可直接使用的中英文双语模板，填入个人信息后打印。</p>
+
+  <div class="card">
+    <h3><span class="emoji">📄</span> 在职证明（Employment Certificate）</h3>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:0.5rem">需使用公司正式信头纸打印 + 加盖公章 + 签字人亲笔签名。</p>
+    <div class="template-box" style="font-size:0.8rem;">
+[Company Letterhead]
 
 Date: _______________
 
@@ -1040,34 +874,13 @@ _________________________
 [Company Name]
 [Company Stamp]
 [Phone Number]</div>
+  </div>
 
-      <div class="sub-title" style="margin-top:1.5rem;">📄 在职证明 · 中文版</div>
-      <div class="code-block">[公司抬头纸]
-
-日期：________
-
-在 职 证 明
-
-兹证明 [姓名]（护照号：[护照号码]）
-系我公司 [职位]。
-自 [入职日期] 起在我公司工作，目前月薪 [金额] 元。
-
-我司已批准其于 [出发日期] 至 [返回日期]
-期间前往西班牙及申根区旅游。
-所有费用由本人承担。我司保证其遵守当地法律并按时回国，
-职位在其休假期间保留。
-
-恳请予以签证批准。
-
-此致
-
-_________________________
-[领导/HR 签字、职位]
-[公司公章]
-[联系电话]</div>
-
-      <div class="sub-title" style="margin-top:1.5rem;">📄 出资声明信（你写给签证官，说明承担配偶费用）</div>
-      <div class="code-block">STATEMENT OF FINANCIAL SUPPORT
+  <div class="card">
+    <h3><span class="emoji">💰</span> 出资声明（Statement of Financial Support）</h3>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:0.5rem">由在职方出具，声明承担同行配偶的全部旅行费用。</p>
+    <div class="template-box" style="font-size:0.8rem;">
+STATEMENT OF FINANCIAL SUPPORT
 
 Date: _______________
 
@@ -1088,690 +901,74 @@ _________________________
 [Your Signature]
 [Full Name]
 [Phone Number]</div>
-
-      <div class="info-box tip" style="margin-top:1rem;">
-        <strong>💡 打印提示：</strong>在职证明必须用公司抬头纸（带 Logo 和地址电话）打印。如果公司没有抬头纸模板，去文印店做一个也不难，关键是公章要盖清晰。
-      </div>
-    </div>
-
-    <!-- ===== 西班牙申根申请表填写模板 ===== -->
-    <div class="card" id="visa-form-template">
-      <h3><span class="emoji">📝</span> 西班牙申根签证申请表 · DIY 填写模板</h3>
-      <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1rem;">
-        根据小红书攻略「🇪🇸西班牙申根签证表DIY必备填写模板📑」整理。核心原则：<strong>全程大写英文/西班牙文填写、A4 打印、本人签名与护照签名一致</strong>。页面下方已保存原图模板，方便照着核对。
-      </p>
-
-      <div class="info-box warn" style="margin-bottom:1rem;">
-        <strong>⚠️ 一致性优先：</strong>姓名拼音、出生日期、护照号、入境/离境日期、停留天数、酒店地址、机票预订单、行程单、保险天数必须互相一致。填错不要涂改，建议直接重新打印填写。
-      </div>
-
-      <div class="card-grid">
-        <div style="background:#faf8f5;border-radius:12px;padding:1rem;">
-          <h4 style="font-size:0.95rem;margin-bottom:0.4rem;">1️⃣ 个人信息区</h4>
-          <ul class="checklist">
-            <li><span class="check">•</span> 姓名按护照拼音填写，全部大写</li>
-            <li><span class="check">•</span> 出生日期格式：日-月-年，例如 19-08-1995</li>
-            <li><span class="check">•</span> 护照号、签发日期、有效期、签发机关按护照填写</li>
-            <li><span class="check">•</span> 中文地址转大写拼音，联系方式写 +86 手机号 + 邮箱</li>
-          </ul>
-        </div>
-        <div style="background:#faf8f5;border-radius:12px;padding:1rem;">
-          <h4 style="font-size:0.95rem;margin-bottom:0.4rem;">2️⃣ 旅行信息区</h4>
-          <ul class="checklist">
-            <li><span class="check">•</span> 入境/离境日期与机票预订单完全一致</li>
-            <li><span class="check">•</span> 停留天数要算准，并与英文行程单匹配</li>
-            <li><span class="check">•</span> 出行目的勾选 Tourism，其他选项按实际需要</li>
-            <li><span class="check">•</span> 住宿信息填写酒店全称 + 地址，与酒店订单一致</li>
-          </ul>
-        </div>
-        <div style="background:#faf8f5;border-radius:12px;padding:1rem;">
-          <h4 style="font-size:0.95rem;margin-bottom:0.4rem;">3️⃣ 工作/学习信息</h4>
-          <ul class="checklist">
-            <li><span class="check">•</span> 职业如实填写：职位名称 / Student / Freelancer 等</li>
-            <li><span class="check">•</span> 雇主或学校写全称、地址、电话</li>
-            <li><span class="check">•</span> 在职人员写月薪；学生/无业可写父母或配偶资助</li>
-          </ul>
-        </div>
-        <div style="background:#faf8f5;border-radius:12px;padding:1rem;">
-          <h4 style="font-size:0.95rem;margin-bottom:0.4rem;">4️⃣ 行程与费用</h4>
-          <ul class="checklist">
-            <li><span class="check">•</span> 行程描述可写：Spain and other Schengen countries tourism, total X days</li>
-            <li><span class="check">•</span> 费用承担方写本人承担，或写资助人姓名 + 关系</li>
-            <li><span class="check">•</span> 如果配偶随行，用出资声明信与结婚公证互相支撑</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="table-wrap" style="margin-top:1rem;">
-        <table>
-          <thead><tr><th>项目</th><th>填写 / 准备要求</th></tr></thead>
-          <tbody>
-            <tr><td><strong>签名与日期</strong></td><td>签名栏手写中文签名，必须与护照签名一致；日期填写递交申请当天日期。未成年人需监护人签名。</td></tr>
-            <tr><td><strong>照片</strong></td><td>2 张 6 个月内白底彩照，3.5 × 4.5 cm。现场粘贴建议用双面胶，不要用订书机。</td></tr>
-            <tr><td><strong>材料配套</strong></td><td>申请表 1 份、照片 2 张、有效护照及全本复印件、往返机票预订单、全程酒店预订单、3 万欧元保额旅行保险、近 6 个月银行流水。</td></tr>
-            <tr><td><strong>预约时间</strong></td><td>建议提前 2–3 个月预约递签，旺季预留更长时间；首次申请需本人到场采集指纹，指纹一般 59 个月内有效。</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="template-grid">
-        <figure class="template-shot"><img src="assets/xhs-spain-visa-form/form-template-01.jpg" alt="西班牙申根签证申请表填写模板第1页"><figcaption>第 1 页：姓名、出生信息、国籍、证件类型</figcaption></figure>
-        <figure class="template-shot"><img src="assets/xhs-spain-visa-form/form-template-02.jpg" alt="西班牙申根签证申请表填写模板第2页"><figcaption>第 2 页：护照信息、职业、联系人信息</figcaption></figure>
-        <figure class="template-shot"><img src="assets/xhs-spain-visa-form/form-template-03.jpg" alt="西班牙申根签证申请表填写模板第3页"><figcaption>第 3 页：旅行目的、目的地、入境次数</figcaption></figure>
-        <figure class="template-shot"><img src="assets/xhs-spain-visa-form/form-template-04.jpg" alt="西班牙申根签证申请表填写模板第4页"><figcaption>第 4 页：住宿/邀请方、费用承担方式</figcaption></figure>
-        <figure class="template-shot"><img src="assets/xhs-spain-visa-form/form-template-05.jpg" alt="西班牙申根签证申请表填写模板第5页"><figcaption>第 5 页：欧盟亲属、声明与确认</figcaption></figure>
-        <figure class="template-shot"><img src="assets/xhs-spain-visa-form/form-template-06.jpg" alt="西班牙申根签证申请表填写模板第6页"><figcaption>第 6 页：最终签名、地点与日期</figcaption></figure>
-      </div>
-
-      <p style="color:var(--text-secondary);font-size:0.78rem;margin-top:0.8rem;">
-        来源参考：小红书用户「西示风」笔记《🇪🇸西班牙申根签证表DIY必备填写模板📑》。图片用于个人申请准备时核对字段，不替代 BLS / 西班牙领馆最新官方要求。
-      </p>
-    </div>
-
-    <!-- ===== BLS 预约 + 递签流程 ===== -->
-    <div class="card">
-      <h3><span class="emoji">🌐</span> BLS 预约步骤</h3>
-      <ol class="step-list">
-        <li>打开 <a href="https://www.blsspainvisa.com/" target="_blank" style="color:var(--accent);">blsspainvisa.com</a> → 选择国家 <strong>CHINA</strong></li>
-        <li>点击顶部导航 <strong>「BOOK APPOINTMENT」</strong></li>
-        <li>选择签证中心 <strong>「Shanghai」</strong></li>
-        <li>选择签证类型 <strong>「Schengen Visa (Tourist)」</strong></li>
-        <li>填写申请人信息：姓名、护照号、手机、邮箱</li>
-        <li>选择日期和时间段（<strong>建议约最早时段 8:00–8:30，人少处理快</strong>）</li>
-        <li>确认后打印 <strong>预约确认单</strong>（递签当天带去）</li>
-      </ol>
-
-      <div class="info-box warn" style="margin-top:0.8rem;">
-        <strong>🎯 抢号技巧：</strong><br>
-        • 上海领区通常提前 2–4 周放号<br>
-        • 系统每天早上 <strong>8:00–9:00</strong> 更新最频繁<br>
-        • 两人同行可以<strong>约同一天相邻时段</strong>，材料分开递交<br>
-        • 如果刷不到号，可以试试下午 2–3 点（有人取消会释放名额）
-      </div>
-
-      <div class="sub-title">🏢 递签当天流程</div>
-      <p style="color:var(--text-secondary);font-size:0.9rem;">
-        📍 黄浦区四川中路 213 号 久事商务大厦 3 层
-      </p>
-      <ol class="step-list">
-        <li><strong>到达</strong> — 提前 15 分钟到，进门安检</li>
-        <li><strong>取号</strong> — 到 3 层 BLS 柜台出示预约单取号</li>
-        <li><strong>等待叫号</strong> — 到对应窗口递交材料</li>
-        <li><strong>交材料</strong> — 工作人员会审核并问你几个简单问题（去西班牙哪里？做什么工作？）</li>
-        <li><strong>缴费</strong> — 现金或刷卡，约 ¥800/人</li>
-        <li><strong>录指纹</strong> — 采集 10 指指纹 + 现场拍照（穿深色衣服，不要戴首饰）</li>
-        <li><strong>领回执</strong> — 保管好回执单，上面有追踪号码用于查进度</li>
-      </ol>
-      <p style="color:var(--text-secondary);font-size:0.85rem;margin-top:0.8rem;">
-        ⏱ 全程约 1–2 小时（视当天人数而定）
-      </p>
-    </div>
-
-    <!-- ===== 结婚公证 ===== -->
-    <div class="card">
-      <h3><span class="emoji">💒</span> 结婚公证 + 单认证办理</h3>
-      <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:0.8rem;">
-        配偶随行时，西班牙领事馆要求提供结婚公证书（中英文）+ 外交部单认证。建议提前 3–4 周办理。
-      </p>
-
-      <div class="card-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
-        <div style="background:#faf8f5;border-radius:12px;padding:1rem;">
-          <h4 style="font-size:0.95rem;margin-bottom:0.4rem;">📍 第一步：结婚公证</h4>
-          <p style="color:var(--text-secondary);font-size:0.85rem;">
-            <strong>地点：</strong>上海市东方公证处<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（静安区凤阳路 598 号）<br>
-            或其他有涉外公证资格的公证处<br><br>
-            <strong>材料：</strong>双方身份证 + 户口本 + 结婚证原件<br><br>
-            <strong>费用：</strong>约 ¥200–300<br><br>
-            <strong>时间：</strong>5–7 个工作日（可加急 2–3 天）<br><br>
-            <strong>要求：</strong>办理中英文结婚公证书
-          </p>
-        </div>
-        <div style="background:#faf8f5;border-radius:12px;padding:1rem;">
-          <h4 style="font-size:0.95rem;margin-bottom:0.4rem;">📍 第二步：单认证</h4>
-          <p style="color:var(--text-secondary);font-size:0.85rem;">
-            <strong>地点：</strong>上海市外事办<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（静安区华山路 228 号）<br><br>
-            <strong>材料：</strong>公证书原件<br><br>
-            <strong>费用：</strong>约 ¥50–100<br><br>
-            <strong>时间：</strong>约 5 个工作日<br><br>
-            <strong>说明：</strong>单认证 = 外交部领事司对公证书上公证员签章的认证，西班牙领馆认可
-          </p>
-        </div>
-      </div>
-
-      <div class="info-box tip" style="margin-top:0.8rem;">
-        <strong>⏰ 建议时间：</strong>6 月下旬开始办结婚公证 → 拿到公证书后立刻送外事办单认证 → 约 2–3 周拿到完整的公证书。不要等递签前才办！
-      </div>
-    </div>
-
-    <!-- ===== 银行流水 ===== -->
-    <div class="card">
-      <h3><span class="emoji">🏦</span> 银行流水要求 & 避坑</h3>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>要求</th><th>说明</th></tr></thead>
-          <tbody>
-            <tr><td><strong>时间</strong></td><td>近 3–6 个月，递签前 1–2 周内去银行打印</td></tr>
-            <tr><td><strong>类型</strong></td><td>工资卡流水最佳——有稳定的工资入账记录，比储蓄卡更有说服力</td></tr>
-            <tr><td><strong>余额</strong></td><td>单人建议 ≥ 3–5 万，两人 ≥ 5–8 万。不用太多，能覆盖旅行花费即可</td></tr>
-            <tr><td><strong>打印</strong></td><td>银行柜台打印中英文双语版 + 盖银行业务章。自助机也可以但双语更保险</td></tr>
-            <tr><td><strong>⚠️ 大忌</strong></td><td>不要递签前突然大额存入！签证官会怀疑是借款。如果余额不够，提前 1–2 个月陆续存入</td></tr>
-            <tr><td><strong>辅助材料</strong></td><td>房产证、车辆登记证、定期存款单、理财证明——都是加分项，复印附上</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- ===== 旅行保险 ===== -->
-    <div class="card">
-      <h3><span class="emoji">🏥</span> 旅行保险推荐</h3>
-      <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:0.8rem;">
-        申根签证强制性要求：保额 ≥ €30,000，覆盖「整个申根区 + 全程天数」。建议买比行程多 1–2 天。
-      </p>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>产品</th><th>价格</th><th>推荐理由</th></tr></thead>
-          <tbody>
-            <tr><td><strong>安联「申根之王」</strong></td><td>¥100–300</td><td>出单最快，申根签专用，支付宝搜得到</td></tr>
-            <tr><td><strong>平安境外旅行险</strong></td><td>¥80–200</td><td>大品牌，理赔方便，覆盖全面</td></tr>
-            <tr><td><strong>美亚「万国游踪」</strong></td><td>¥120–350</td><td>老牌好评，保障条款详细</td></tr>
-            <tr><td><strong>京东安联申根险</strong></td><td>¥90–250</td><td>性价比高，该有的都有</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="color:var(--text-secondary);font-size:0.85rem;margin-top:0.5rem;">
-        💡 支付宝直接搜索「申根保险」即可购买和打印保单。记得选<strong>彩色打印</strong>随材料递交。
-      </p>
-    </div>
-
-    <!-- ===== 费用明细 ===== -->
-    <div class="card">
-      <h3><span class="emoji">💰</span> 费用明细（两人）</h3>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>项目</th><th>单价</th><th>两人合计</th></tr></thead>
-          <tbody>
-            <tr><td>申根签证费</td><td>€90（约 ¥700）</td><td>¥1,400</td></tr>
-            <tr><td>BLS 服务费</td><td>约 ¥120</td><td>¥240</td></tr>
-            <tr><td>快递费（可选）</td><td>¥60/本</td><td>¥120</td></tr>
-            <tr><td>结婚公证 + 单认证</td><td>—</td><td>¥250–400</td></tr>
-            <tr><td>旅行保险</td><td>¥100–300</td><td>¥200–600</td></tr>
-            <tr><td>照片（如需现场拍）</td><td>¥35</td><td>¥70</td></tr>
-            <tr><td>复印/打印</td><td>若干</td><td>¥50</td></tr>
-            <tr style="font-weight:600;"><td><strong>总计</strong></td><td></td><td><strong>¥2,300–2,900</strong></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- ===== 注意事项 ===== -->
-    <div class="card">
-      <h3><span class="emoji">⚠️</span> 拒签常见原因 & 避坑指南</h3>
-      <div class="card-grid" style="margin-top:0.5rem;">
-        <div class="info-box red" style="margin:0;">
-          <strong>🚫 拒签 TOP 5</strong><br><br>
-          1️⃣ <strong>银行流水不够</strong> — 余额低、临时大额存入、流水不规律<br><br>
-          2️⃣ <strong>行程不合理</strong> — 日程太松/太紧、城市间交通逻辑不通<br><br>
-          3️⃣ <strong>在职证明不完整</strong> — 没有公司抬头纸、缺少公章、信息不全<br><br>
-          4️⃣ <strong>保险不达标</strong> — 保额不足 €30,000、未覆盖全程<br><br>
-          5️⃣ <strong>主要目的地不是西班牙</strong> — 西班牙不是停留最长的国家
-        </div>
-        <div class="info-box tip" style="margin:0;">
-          <strong>✅ 避坑指南</strong><br><br>
-          • 银行流水提前准备，不要临时操作<br><br>
-          • 行程单要详细到每天，交通衔接要合理<br><br>
-          • 提前通知公司 HR 可能接到电话调查<br><br>
-          • 确保西班牙是全程中住宿最多的国家<br><br>
-          • 所有材料用 A4 纸，按顺序排列，不要装订<br><br>
-          • 复印件至少备 1 份（现场复印 ¥1/页 较贵）
-        </div>
-      </div>
-
-      <div class="info-box warn" style="margin-top:1rem;">
-        <strong>📞 电话调查：</strong>西班牙领馆可能会打给你的公司确认信息。提前跟 HR/领导打招呼，让他们知道你要去西班牙旅游、准假日期和你说的要一致。如果回答不上来，可能会被拒签。
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- ======== ITINERARY ======== -->
-<section id="itinerary" style="background: #f5f0eb;">
-  <div class="container">
-    <span class="section-label">🗓️ 7 天 6 晚</span>
-    <h2>🗺️ 巴塞罗那 → 马德里</h2>
-    <p class="section-desc">圣家堂完工之年，感受高迪的梦幻世界；再去马德里，体验西班牙双城记。</p>
+<!-- ============ 注意事项 ============ -->
+<section id="notes">
+  <span class="section-label">Notes</span>
+  <h2>⚠️ 重要注意事项</h2>
+  <p class="section-desc">办理过程中的关键提醒，建议逐条阅读。</p>
 
-    <!-- Route diagram -->
-    <div class="card" style="text-align:center;">
-      <h3 style="justify-content:center;">🚄 行程路线</h3>
-      <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1rem;">
-        上海 ✈️ 巴塞罗那（3晚） 🚄 马德里（3晚） ✈️ 上海
-      </p>
-      <div style="display:flex;align-items:center;justify-content:center;gap:0.5rem;flex-wrap:wrap;font-size:1.5rem;">
-        <span style="background:var(--accent);color:#fff;padding:0.3rem 1rem;border-radius:8px;font-size:0.9rem;">上海</span>
-        <span>✈️ 13h</span>
-        <span style="background:var(--gold);color:#fff;padding:0.3rem 1rem;border-radius:8px;font-size:0.9rem;">巴塞罗那</span>
-        <span>🚄 2.5h</span>
-        <span style="background:var(--gold);color:#fff;padding:0.3rem 1rem;border-radius:8px;font-size:0.9rem;">马德里</span>
-        <span>✈️ 12h</span>
-        <span style="background:var(--accent);color:#fff;padding:0.3rem 1rem;border-radius:8px;font-size:0.9rem;">上海</span>
-      </div>
-    </div>
+  <div class="alert alert-danger">
+    <strong>🔴 护照有效期：</strong>以预计回国时间为准计算，护照有效期必须在 6 个月以上，否则有登机及出境失败的风险。如不满足请先到出入境机关更换护照。
+  </div>
 
-    <!-- Day 1 -->
-    <div class="day-card open">
-      <div class="day-header" onclick="this.parentElement.classList.toggle('open')">
-        <h3><span class="day-num">1</span> 抵达巴塞罗那 · 初见高迪</h3>
-        <span class="toggle-icon">▾</span>
-      </div>
-      <div class="day-body">
-        <ul>
-          <li><span class="time">✈️ 上午</span>抵达巴塞罗那机场（BCN），乘机场大巴到市区</li>
-          <li><span class="time">🏨 中午</span>入住酒店（推荐 Eixample 扩展区，靠近高迪建筑群）</li>
-          <li><span class="time">🍽️ 下午</span><span class="day-tag meal">午餐</span> Cervecería Catalana 地道 Tapas</li>
-          <li><span class="time">🚶 下午</span>兰布拉大道 → 博盖利亚市场（水果·火腿·海鲜）</li>
-          <li><span class="time">🌇 傍晚</span>哥特区迷宫小巷 → 巴塞罗那主教堂</li>
-          <li><span class="time">🍷 晚上</span><span class="day-tag meal">晚餐</span> 港口区 Can Majó 海鲜晚餐，地中海晚风 🥂</li>
-        </ul>
-      </div>
-    </div>
+  <div class="alert alert-danger">
+    <strong>🔴 未获签前不要购买不可取消订单：</strong>在未取得签证结果之前，请不要购买无法取消的机票和酒店订单。签证中心及使馆收取的费用不包含在代办费中。
+  </div>
 
-    <!-- Day 2 -->
-    <div class="day-card open">
-      <div class="day-header" onclick="this.parentElement.classList.toggle('open')">
-        <h3><span class="day-num">2</span> 圣家堂 · 高迪建筑日</h3>
-        <span class="toggle-icon">▾</span>
-      </div>
-      <div class="day-body">
-        <ul>
-          <li><span class="time">⛪ 上午</span><span class="day-tag sight">重点</span> <strong>圣家堂</strong>（建议预订 9:00 最早场，人少光影最美）</li>
-          <li><span class="time">🏛️ 中午</span>圣家堂对面 High 咖啡厅（可拍到全景倒影）</li>
-          <li><span class="time">🏠 下午</span><span class="day-tag sight">巴特罗之家</span> 高迪的海洋幻想</li>
-          <li><span class="time">🏠 下午</span><span class="day-tag sight">米拉之家</span> 屋顶烟囱群 + 城市全景</li>
-          <li><span class="time">🌳 傍晚</span><span class="day-tag sight">古埃尔公园</span> 彩色马赛克长椅看日落</li>
-          <li><span class="time">🍽️ 晚上</span><span class="day-tag meal">晚餐</span> 加泰罗尼亚传统餐厅 El Nacional</li>
-        </ul>
-        <div class="quote" style="margin-top:0.8rem;">
-          🏛️ 2026 年是圣家堂开工 144 周年、高迪逝世百年——今年终于主体完工！这是历史上第一次看到完整的圣家堂，意义非凡。
-        </div>
-      </div>
-    </div>
+  <div class="alert alert-warn">
+    <strong>🟡 材料一致性：</strong>提交给代办的材料必须与给大使馆的材料一致，否则有拒签风险。申请表、行程单、机票、酒店、保险等所有材料上的信息须互相吻合。
+  </div>
 
-    <!-- Day 3 -->
-    <div class="day-card open">
-      <div class="day-header" onclick="this.parentElement.classList.toggle('open')">
-        <h3><span class="day-num">3</span> 海滩 · 艺术 · 浪漫之夜</h3>
-        <span class="toggle-icon">▾</span>
-      </div>
-      <div class="day-body">
-        <ul>
-          <li><span class="time">🏖️ 上午</span>巴塞罗那海滩 Barceloneta 散步 + 海边早午餐</li>
-          <li><span class="time">🎨 下午</span>加泰罗尼亚国家艺术博物馆（MNAC）</li>
-          <li><span class="time">⛰️ 傍晚</span>蒙特惠奇山城堡俯瞰港口全景</li>
-          <li><span class="time">🎭 晚上</span><span class="day-tag tip">可选</span> 加泰罗尼亚音乐宫看一场弗拉门戈或音乐会</li>
-          <li><span class="time">🍷 晚上</span><span class="day-tag meal">晚餐</span> 哥特区隐秘小酒馆，吃正宗海鲜饭 Paella</li>
-        </ul>
-      </div>
-    </div>
+  <div class="alert alert-warn">
+    <strong>🟡 酒店数量限制：</strong>为顺利办理申根签证，行程中酒店数量有上限：9 天内最多 2 家 | 15 天内最多 3 家 | 25 天内最多 5 家 | 30 天以上最多 6 家。如需额外增加，每多加 1 间加收 15 元/人。
+  </div>
 
-    <!-- Day 4: Travel -->
-    <div class="day-card open">
-      <div class="day-header" onclick="this.parentElement.classList.toggle('open')">
-        <h3><span class="day-num">4</span> 巴塞罗那 → 马德里</h3>
-        <span class="toggle-icon">▾</span>
-      </div>
-      <div class="day-body">
-        <ul>
-          <li><span class="time">☀️ 上午</span>巴塞罗那最后半天：圣卡特琳娜市场吃 Fresc Co 或逛逛 El Born 区</li>
-          <li><span class="time">🚄 中午</span><span class="day-tag transport">高铁 AVE</span> 巴塞罗那 Sants 站 → 马德里 Atocha 站（约 2.5h）</li>
-          <li><span class="time">🏨 下午</span>抵达马德里，入住酒店（推荐 Sol 或 Gran Vía 附近）</li>
-          <li><span class="time">🚶 下午</span>太阳门广场（零公里标志）→ 马约尔广场</li>
-          <li><span class="time">🍽️ 晚上</span><span class="day-tag meal">晚餐</span><span class="day-tag tip">必去</span> <strong>圣米格尔市场</strong> Mercado de San Miguel 吃 Tapas 逛吃模式</li>
-        </ul>
-      </div>
-    </div>
+  <div class="alert alert-info">
+    <strong>🔵 使馆电话调查：</strong>资料提交后使馆可能进行电话调查，请务必接听。回答需与提交材料一致，提供真实资料。
+  </div>
 
-    <!-- Day 5 -->
-    <div class="day-card open">
-      <div class="day-header" onclick="this.parentElement.classList.toggle('open')">
-        <h3><span class="day-num">5</span> 马德里王宫 · 艺术之旅</h3>
-        <span class="toggle-icon">▾</span>
-      </div>
-      <div class="day-body">
-        <ul>
-          <li><span class="time">🏰 上午</span><strong>马德里王宫</strong>（欧洲第三大王宫，建议 10:00 前到）</li>
-          <li><span class="time">🌿 中午</span>萨巴蒂尼花园散步拍照，王宫外景绝佳机位</li>
-          <li><span class="time">🎨 下午</span><strong>普拉多博物馆</strong>（世界顶级美术馆，看戈雅、委拉斯开兹）</li>
-          <li><span class="time">🌇 傍晚</span><strong>德波神庙</strong> Templo de Debod —— 马德里最美日落 🌅</li>
-          <li><span class="time">🍽️ 晚上</span><span class="day-tag meal">晚餐</span> Sobrino de Botín（1725年开业，吉尼斯最老餐厅，烤乳猪必点）</li>
-        </ul>
-      </div>
-    </div>
+  <div class="alert alert-info">
+    <strong>🔵 审理时间：</strong>一般 15-20 天左右可拿到护照。高峰期、节假日、设备故障、打印错误、政府调查等可能导致延长。使领馆保留要求补资料的权利。
+  </div>
 
-    <!-- Day 6 -->
-    <div class="day-card open">
-      <div class="day-header" onclick="this.parentElement.classList.toggle('open')">
-        <h3><span class="day-num">6</span> 丽池公园 · 悠闲时光</h3>
-        <span class="toggle-icon">▾</span>
-      </div>
-      <div class="day-body">
-        <ul>
-          <li><span class="time">🚣 上午</span><strong>丽池公园</strong> Retiro Park 划船 + 水晶宫 Palacio de Cristal</li>
-          <li><span class="time">🛍️ 下午</span>格兰大道 Gran Vía 逛街购物</li>
-          <li><span class="time">🍩 下午</span>Chocolatería San Ginés 吃吉拿果蘸热巧克力 🍫</li>
-          <li><span class="time">🎭 晚上</span><span class="day-tag tip">可选</span> 看一场西班牙弗拉门戈表演（推荐 Corral de la Morería）</li>
-          <li><span class="time">🍽️ 晚上</span><span class="day-tag meal">晚餐</span> 最后一晚的浪漫晚宴，Gran Vía 屋顶餐厅看夜景</li>
-        </ul>
-      </div>
-    </div>
+  <div class="alert alert-info">
+    <strong>🔵 指纹有效期：</strong>首次申根需本人到场录 10 指指纹，59 个月内有效。如之前录过且仍在有效期内，可能无需再次前往。
+  </div>
 
-    <!-- Day 7 -->
-    <div class="day-card open">
-      <div class="day-header" onclick="this.parentElement.classList.toggle('open')">
-        <h3><span class="day-num">7</span> 返程 · Hasta Luego</h3>
-        <span class="toggle-icon">▾</span>
-      </div>
-      <div class="day-body">
-        <ul>
-          <li><span class="time">☀️ 上午</span>最后采购纪念品：火腿、橄榄油、藏红花</li>
-          <li><span class="time">✈️ 下午</span>马德里机场（MAD）→ 上海</li>
-          <li><span class="time">🌙 晚上</span>飞行中回味西班牙的每一刻 🇪🇸❤️</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card" style="margin-top: 0.5rem;">
-      <h3><span class="emoji">💡</span> 关于圣家堂门票</h3>
-      <p style="color:var(--text-secondary);font-size:0.92rem;">
-        圣家堂是全世界最热门的景点之一，<strong>必须提前 1–2 个月在线购票</strong>。建议选 <strong>9:00 最早入场 + 登塔 (Passion Tower)</strong> 的组合票，光线最佳且人少。官网：<code>sagradafamilia.org</code>
-      </p>
-      <p style="color:var(--text-secondary);font-size:0.92rem;margin-top:0.5rem;">
-        另外推荐预订 <strong>巴特罗之家夜场</strong>（蓝色 LED 灯光秀），以及 <strong>古埃尔公园</strong> 门票也要提前购买，每天限流。
-      </p>
-    </div>
+  <div class="alert alert-info">
+    <strong>🔵 出签后核对：</strong>出签后第一时间核对签证页上个人信息（护照号码、姓名拼音、性别等）。如有错误立即联系代办修改，24 小时后不再受理。
   </div>
 </section>
 
-<!-- ======== FOOD ======== -->
-<section id="food">
-  <div class="container">
-    <span class="section-label">🍽️ 吃货指南</span>
-    <h2>两个人的西班牙味蕾之旅</h2>
-    <p class="section-desc">从 Tapas 到海鲜饭，从吉拿果到桑格利亚——每一口都是西班牙的热情。</p>
-
-    <div class="card-grid">
-      <div class="card">
-        <h3><span class="emoji">🥘</span> 海鲜饭 Paella</h3>
-        <p style="color:var(--text-secondary);font-size:0.9rem;">发源地瓦伦西亚最正宗，但巴塞罗那港口区也能找到一流版本。两人分享一锅，配白葡萄酒 🥂</p>
-      </div>
-      <div class="card">
-        <h3><span class="emoji">🍖</span> 伊比利亚火腿</h3>
-        <p style="color:var(--text-secondary);font-size:0.9rem;">Jamón Ibérico de Bellota——黑标橡果火腿，入口即化。马德里 Museo del Jamón 是性价比之选。</p>
-      </div>
-      <div class="card">
-        <h3><span class="emoji">🍩</span> 吉拿果 Churros</h3>
-        <p style="color:var(--text-secondary);font-size:0.9rem;">马德里 San Ginés —— 1884 年开业的老店，24 小时营业。热油炸面团蘸浓巧克力，甜蜜到心底。</p>
-      </div>
-      <div class="card">
-        <h3><span class="emoji">🍷</span> 桑格利亚 Sangría</h3>
-        <p style="color:var(--text-secondary);font-size:0.9rem;">红葡萄酒 + 水果 + 气泡水，最适合两人小酌。Catalana 区的 Cava 起泡酒也值得一试。</p>
-      </div>
-      <div class="card">
-        <h3><span class="emoji">🦐</span> Tapas 逛吃</h3>
-        <p style="color:var(--text-secondary);font-size:0.9rem;">西班牙的饮食文化——每餐换不同小店，点几份小菜配一杯酒。推荐：Patatas Bravas、Gambas al Ajillo、Croquetas</p>
-      </div>
-      <div class="card">
-        <h3><span class="emoji">🥣</span> 西班牙冷汤 Gazpacho</h3>
-        <p style="color:var(--text-secondary);font-size:0.9rem;">番茄底的冷汤，10 月初西班牙还热，喝一碗清爽开胃。配火腿和面包就是完美一餐。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ======== BUDGET ======== -->
-<section id="budget" style="background: #f5f0eb;">
-  <div class="container">
-    <span class="section-label">💰 花费预算</span>
-    <h2>两人 7 天 · 中等预算参考</h2>
-    <p class="section-desc">十一期间为旺季，价格上浮约 20–30%，以下按旺季估算。</p>
-
-    <div class="budget-grid">
-      <div class="budget-item">
-        <div class="label">✈️ 往返机票</div>
-        <div class="amount">¥10,000–16,000</div>
-        <div class="note">两人合计，建议提前 4 个月关注</div>
-      </div>
-      <div class="budget-item">
-        <div class="label">🏨 住宿 6 晚</div>
-        <div class="amount">¥5,000–8,000</div>
-        <div class="note">中档精品酒店/民宿含早餐</div>
-      </div>
-      <div class="budget-item">
-        <div class="label">🚄 高铁 AVE</div>
-        <div class="amount">¥800–1,200</div>
-        <div class="note">巴塞罗那 → 马德里 两人单程</div>
-      </div>
-      <div class="budget-item">
-        <div class="label">🍽️ 餐饮</div>
-        <div class="amount">¥4,000–6,000</div>
-        <div class="note">正餐 €25–40/人/餐</div>
-      </div>
-      <div class="budget-item">
-        <div class="label">🎫 景点门票</div>
-        <div class="amount">¥1,500–2,500</div>
-        <div class="note">圣家堂 €26×2 + 其它</div>
-      </div>
-      <div class="budget-item">
-        <div class="label">🚇 市内交通</div>
-        <div class="amount">¥500–800</div>
-        <div class="note">地铁10次票 + 机场大巴</div>
-      </div>
-      <div class="budget-item">
-        <div class="label">🛡️ 旅行保险</div>
-        <div class="amount">¥200–400</div>
-        <div class="note">申根保险必备</div>
-      </div>
-      <div class="budget-item">
-        <div class="label">🛍️ 购物/纪念品</div>
-        <div class="amount">¥2,000–5,000</div>
-        <div class="note">火腿/橄榄油/藏红花等</div>
-      </div>
-      <div class="budget-item budget-total">
-        <div class="label">💶 总计（两人）</div>
-        <div class="amount">约 ¥25,000–40,000</div>
-        <div class="note">不含购物，丰俭由人</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ======== INFO ======== -->
-<section id="info">
-  <div class="container">
-    <span class="section-label">🔌 行前必知</span>
-    <h2>实用信息速查</h2>
-    <p class="section-desc">出发前看一眼，落地不慌。</p>
-
-    <div class="accordion">
-      <div class="accordion-item open">
-        <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
-          🌤️ 10 月初天气 & 穿着
-          <span class="arrow">▾</span>
-        </div>
-        <div class="accordion-body">
-          <table>
-            <thead><tr><th>城市</th><th>白天</th><th>早晚</th><th>建议</th></tr></thead>
-            <tbody>
-              <tr><td>巴塞罗那</td><td>22–24°C ☀️</td><td>15–17°C</td><td>白天短袖/裙子，薄外套备用</td></tr>
-              <tr><td>马德里</td><td>20–23°C ☀️</td><td>10–13°C</td><td>昼夜温差大，需夹克/毛衣</td></tr>
-            </tbody>
-          </table>
-          <p style="margin-top:0.8rem;">👗 情侣穿搭建议：宽松舒适为主，一双好走的鞋子最重要！女生可以带一条红色/碎花连衣裙，在西班牙广场拍照超好看。</p>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
-          🔌 出行必备
-          <span class="arrow">▾</span>
-        </div>
-        <div class="accordion-body">
-          <ul style="list-style:none;padding:0;">
-            <li style="padding:0.3rem 0;">🔌 欧标转换插头（两圆孔 C/F 型）</li>
-            <li style="padding:0.3rem 0;">📱 欧洲电话卡（Vodafone/Orange，飞猪可提前买）</li>
-            <li style="padding:0.3rem 0;">💳 Visa/Mastercard 信用卡（西班牙刷卡很普遍）</li>
-            <li style="padding:0.3rem 0;">💶 兑换 €200–500 现金（少量即可，大部分可刷卡）</li>
-            <li style="padding:0.3rem 0;">📄 护照 + 签证页复印件（手机存电子版）</li>
-            <li style="padding:0.3rem 0;">🧴 防晒霜（西班牙紫外线很强）</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
-          🚇 交通攻略
-          <span class="arrow">▾</span>
-        </div>
-        <div class="accordion-body">
-          <p><strong>城际：高铁 AVE</strong> — 巴塞罗那→马德里 2.5h，提前在 Renfe 官网购票有折扣。</p>
-          <p style="margin-top:0.5rem;"><strong>市内交通：</strong></p>
-          <ul style="list-style:none;padding:0;margin-top:0.3rem;">
-            <li style="padding:0.2rem 0;">🚇 巴塞罗那：T-Casual 10次票 €11.35</li>
-            <li style="padding:0.2rem 0;">🚇 马德里：10次票 €12.20</li>
-            <li style="padding:0.2rem 0;">🚕 Uber/Cabify 可用，价格合理</li>
-            <li style="padding:0.2rem 0;">🚌 机场到市区：Aerobus €5–6/人</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
-          ⚠️ 安全提醒
-          <span class="arrow">▾</span>
-        </div>
-        <div class="accordion-body">
-          <p>西班牙整体治安良好，但巴塞罗那和马德里的小偷问题比较突出。几个要点：</p>
-          <ul style="list-style:none;padding:0;margin-top:0.5rem;">
-            <li style="padding:0.3rem 0;">📍 <strong>重点防范区域</strong>：兰布拉大道、地铁站、太阳门广场</li>
-            <li style="padding:0.3rem 0;">📵 不要拿手机边走边看地图，进店再看</li>
-            <li style="padding:0.3rem 0;">👛 护照和现金分开放，用内袋或腰包</li>
-            <li style="padding:0.3rem 0;">🎒 背包背前面，尤其在人多的地方</li>
-            <li style="padding:0.3rem 0;">🚨 紧急电话：112（欧盟统一）</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="this.parentElement.classList.toggle('open')">
-          🕐 其他实用贴士
-          <span class="arrow">▾</span>
-        </div>
-        <div class="accordion-body">
-          <ul style="list-style:none;padding:0;">
-            <li style="padding:0.3rem 0;">⏰ 时差：夏令时比北京时间慢 6 小时</li>
-            <li style="padding:0.3rem 0;">💬 语言：西班牙语，旅游区英语通用。学几句：<em>Hola</em>（你好）、<em>Gracias</em>（谢谢）、<em>Por favor</em>（请）</li>
-            <li style="padding:0.3rem 0;">🍽️ 用餐时间：午餐 13:00–15:30，晚餐 20:00–23:00（比中国晚）</li>
-            <li style="padding:0.3rem 0;">💵 小费：非强制，好服务留 5–10%</li>
-            <li style="padding:0.3rem 0;">🚾 厕所：餐厅可免费使用，街边公共厕所少，看到咖啡馆就去一下</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ======== CHECKLIST ======== -->
-<section id="checklist" style="background: #f5f0eb;">
-  <div class="container">
-    <span class="section-label">✅ 出发前</span>
-    <h2>行前待办清单</h2>
-    <p class="section-desc">跟着清单一步步准备，不会漏掉任何关键事项。</p>
-
-    <div class="card-grid">
-      <div class="card">
-        <h3><span class="emoji">📅</span> 倒计时 4 个月</h3>
-        <ul class="checklist">
-          <li><span class="check">⬜</span> 确认护照有效期（ > 2027年4月）</li>
-          <li><span class="check">⬜</span> 准备签证材料</li>
-          <li><span class="check">⬜</span> 关注机票价格，设置降价提醒</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><span class="emoji">📅</span> 倒计时 3 个月</h3>
-        <ul class="checklist">
-          <li><span class="check">⬜</span> 在线填写申根申请表</li>
-          <li><span class="check">⬜</span> 预约 BLS 签证中心递签时间</li>
-          <li><span class="check">⬜</span> 购买旅行医疗保险</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><span class="emoji">📅</span> 倒计时 2 个月</h3>
-        <ul class="checklist">
-          <li><span class="check">⬜</span> 递签 + 录指纹</li>
-          <li><span class="check">⬜</span> 预订圣家堂门票</li>
-          <li><span class="check">⬜</span> 预订可退款的酒店</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><span class="emoji">📅</span> 倒计时 1 个月</h3>
-        <ul class="checklist">
-          <li><span class="check">⬜</span> 确认签证出签，购买正式机票</li>
-          <li><span class="check">⬜</span> 预订高铁票 AVE</li>
-          <li><span class="check">⬜</span> 预订其他景点门票</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><span class="emoji">📅</span> 倒计时 1 周</h3>
-        <ul class="checklist">
-          <li><span class="check">⬜</span> 兑换欧元</li>
-          <li><span class="check">⬜</span> 购买欧洲电话卡</li>
-          <li><span class="check">⬜</span> 整理行李（衣物+转换插头+常备药）</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><span class="emoji">📅</span> 出发当天</h3>
-        <ul class="checklist">
-          <li><span class="check">⬜</span> 检查护照+签证+机票</li>
-          <li><span class="check">⬜</span> 手机下载离线地图</li>
-          <li><span class="check">⬜</span> 发朋友圈预告 🛫</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="quote" style="margin-top:2rem;text-align:center;">
-      🇪🇸 愿你们在西班牙留下最美好的回忆！<br>
-      <span style="font-size:0.85rem;">Buen viaje! 一路顺风！</span>
-    </div>
-  </div>
-</section>
-
-<!-- ======== FOOTER ======== -->
-<footer>
-  <p>Made with <span class="hearts">❤️</span> by 福福 & Lance · 2026 西班牙之旅</p>
-  <p style="font-size:0.75rem;margin-top:0.3rem;">上海 → 巴塞罗那 → 马德里 → 上海</p>
+<footer class="footer">
+  <p>🇪🇸 西班牙申根签证 · 全流程资料包 · 康杰 & 媳妇</p>
+  <p>最后更新：2026 年 7 月 | 上海 BLS 领区 | 来源：代办资料 + 公开信息整理</p>
 </footer>
 
-<!-- ======== Scrollspy ======== -->
+</div>
+
 <script>
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav a');
+// Nav active state on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav a');
+const nav = document.getElementById('topNav');
 
-  function updateActiveLink() {
-    let current = '';
-    sections.forEach(s => {
-      const top = s.offsetTop - 120;
-      if (scrollY >= top) current = s.id;
-    });
-    navLinks.forEach(a => {
-      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-    });
-  }
+function setActiveNav() {
+  let current = '';
+  sections.forEach(s => {
+    const top = s.offsetTop - nav.offsetHeight - 100;
+    if (window.scrollY >= top) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+}
 
-  window.addEventListener('scroll', updateActiveLink);
-  updateActiveLink();
+window.addEventListener('scroll', setActiveNav, { passive: true });
+window.addEventListener('load', setActiveNav);
 </script>
-
 </body>
 </html>
